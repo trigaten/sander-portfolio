@@ -13,6 +13,10 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        skModernBold: ["var(--font-sk-modern-bold)", "sans-serif"],
+        skModernRegular: ["var(--font-sk-modern-regular)", "sans-serif"],
+      },
     },
   },
   plugins: [],

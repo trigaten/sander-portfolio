@@ -1,8 +1,19 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "./globals.css";
+import localFont from "next/font/local";
+import Navbar from "@/components/navbar/navbar";
 
 const inter = Inter({ subsets: ["latin"] });
+const skModernBold = localFont({
+  src: "../../public/fonts/hinted-Sk-Modernist-Bold.ttf",
+  variable: "--font-sk-modern-bold",
+});
+
+const skModernRegular = localFont({
+  src: "../../public/fonts/hinted-Sk-Modernist-Regular.ttf",
+  variable: "--font-sk-modern-regular",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -16,7 +27,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={`${skModernBold.variable} ${skModernRegular.variable} ${inter.className}`}
+      >
+        <Navbar />
+        {children}
+      </body>
     </html>
   );
 }
