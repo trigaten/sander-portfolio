@@ -17,6 +17,22 @@ const config: Config = {
         skModernBold: ["var(--font-sk-modern-bold)", "sans-serif"],
         skModernRegular: ["var(--font-sk-modern-regular)", "sans-serif"],
       },
+      colors: {
+        cream: "#FFFDD0", // Add your desired cream color hex code
+        green: {
+          50: "#f1ffee",
+          100: "#dbffd7",
+          200: "#b8ffb1",
+          300: "#7fff74",
+          400: "#42f731",
+          500: "#17e106",
+          600: "#10bb00",
+          700: "#0fa203",
+          800: "#0f7308",
+          900: "#0d5e09",
+          950: "#033500",
+        },
+      },
     },
   },
   plugins: [],

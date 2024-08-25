@@ -26,7 +26,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en bg-white">
       <body
         className={`${skModernBold.variable} ${skModernRegular.variable} ${inter.className}`}
       >
