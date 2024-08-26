@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import sanderGif from "@/../public/sanderGif.gif";
 
 export default function Hero() {
   return (
@@ -18,13 +19,16 @@ export default function Hero() {
           </p>
         </div>
         <div className="w-full md:w-1/2">
-          <Image
-            src="/api/placeholder/500/300"
-            alt="Hero image"
-            width={500}
-            height={300}
-            className="rounded-lg shadow-md w-full h-auto"
-          />
+          <div className="bg-white rounded-lg shadow-lg p-4">
+            <Image
+              src={sanderGif}
+              alt="Hero image"
+              width={500}
+              height={300}
+              className="rounded-lg shadow-md w-full h-auto"
+            />
+            <p className=" mt-2 text-black text-lg">ENMLP Best Theme Paper</p>
+          </div>
         </div>
       </div>
     </div>
