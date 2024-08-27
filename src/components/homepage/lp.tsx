@@ -3,7 +3,7 @@ import Image1 from "@/../public/LP/image1.png";
 import Image2 from "@/../public/LP/image2.png";
 import Image3 from "@/../public/LP/image3.png";
 import Image4 from "@/../public/LP/image4.png";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function LearnPrompting() {
   const images = [Image1, Image2, Image3];
