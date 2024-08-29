@@ -1,16 +1,21 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import image1 from "@/../public/gardenPhotos/home/image1.png";
 import image2 from "@/../public/gardenPhotos/home/image2.png";
+import image3 from "@/../public/gardenPhotos/home/image3.png";
+import image4 from "@/../public/gardenPhotos/home/image4.png";
+import image5 from "@/../public/gardenPhotos/home/image5.png";
+import image6 from "@/../public/gardenPhotos/home/image6.png";
+import image7 from "@/../public/gardenPhotos/home/image7.png";
 const gardenImages = [
   [image1, "Banana Plant Lobster Claw", "Latin Name", "Description"],
   [image2, "Blueberry Plant", "Latin Name", "Description"],
-  [image1, "Banana Plant Lobster Claw", "Latin Name", "Description"],
-  [image1, "Banana Plant Lobster Claw", "Latin Name", "Description"],
-  [image1, "Banana Plant Lobster Claw", "Latin Name", "Description"],
-  [image1, "Banana Plant Lobster Claw", "Latin Name", "Description"],
-  [image1, "Banana Plant Lobster Claw", "Latin Name", "Description"],
+  [image3, "Banana Plant Lobster Claw", "Latin Name", "Description"],
+  [image4, "Banana Plant Lobster Claw", "Latin Name", "Description"],
+  [image5, "Banana Plant Lobster Claw", "Latin Name", "Description"],
+  [image6, "Banana Plant Lobster Claw", "Latin Name", "Description"],
+  [image7, "Banana Plant Lobster Claw", "Latin Name", "Description"],
 ];
 
 interface GardenImage {
@@ -32,22 +37,25 @@ interface ImageCardProps {
 }
 
 const ImageCard: React.FC<ImageCardProps> = ({ image, index, className }) => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
+  const [isHovered, setIsHovered] = useState(false);
 
   return (
     <div
       className={`relative overflow-hidden rounded-lg ${className}`}
-      onMouseEnter={() => setHoveredIndex(index)}
-      onMouseLeave={() => setHoveredIndex(null)}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <Image
         src={image[0]}
         alt={image[1]}
-        layout="fill"
-        objectFit="cover"
         className="transition-transform duration-300 hover:scale-110"
+        fill
+        sizes="100vw"
+        style={{
+          objectFit: "cover",
+        }}
       />
-      {hoveredIndex === index && (
+      {isHovered && (
         <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4">
           <h3 className="text-xl font-bold mb-2">{image[1]}</h3>
           <p className="text-sm italic mb-2">{image[2]}</p>

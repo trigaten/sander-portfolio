@@ -3,7 +3,7 @@ import Image1 from "@/../public/LP/image1.png";
 import Image2 from "@/../public/LP/image2.png";
 import Image3 from "@/../public/LP/image3.png";
 import Image4 from "@/../public/LP/image4.png";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export default function LearnPrompting() {
   const images = [Image1, Image2, Image3];
@@ -15,14 +15,17 @@ export default function LearnPrompting() {
           {images.map((img, index) => (
             <div
               key={index}
-              className="relative w-96 h-96 overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
+              className="relative w-96 h-72 overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
             >
               <Image
                 src={img}
                 alt={`image${index + 1}`}
-                layout="fill"
-                objectFit="cover"
                 className="transition-transform duration-300 hover:scale-110"
+                fill
+                sizes="100vw"
+                style={{
+                  objectFit: "cover",
+                }}
               />
             </div>
           ))}
