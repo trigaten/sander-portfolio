@@ -4,6 +4,7 @@ import Image2 from "@/../public/LP/image2.png";
 import Image3 from "@/../public/LP/image3.png";
 import Image4 from "@/../public/LP/image4.png";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function LearnPrompting() {
   const images = [Image1, Image2, Image3];
@@ -11,41 +12,60 @@ export default function LearnPrompting() {
   return (
     <>
       <div className="container mx-auto px-4 mt-8">
-        <div className="flex flex-wrap justify-center gap-6 mb-12">
+        <div className="flex flex-wrap justify-center gap-6 w-full my-40">
           {images.map((img, index) => (
-            <div
-              key={index}
-              className="relative w-96 h-96 overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300"
-            >
-              <Image
-                src={img}
-                alt={`image${index + 1}`}
-                layout="fill"
-                objectFit="cover"
-                className="transition-transform duration-300 hover:scale-110"
-              />
-            </div>
+            <Link href="https://learnprompting.org/" target="_blank">
+              <div
+                key={index}
+                className="relative w-96 h-96 overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+              >
+                <Image
+                  src={img}
+                  alt={`image${index + 1}`}
+                  layout="fill"
+                  objectFit="cover"
+                  className="transition-transform duration-300 hover:scale-110"
+                />
+              </div>
+            </Link>
           ))}
         </div>
 
         <div className="flex items-center justify-center w-full p-4 mt-4 md:mt-24">
           <div className="flex flex-col md:flex-row w-full max-w-7xl">
             <div className="w-full md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0">
-              <h1 className="text-2xl md:text-4xl font-bold mb-4 font-skModernBold text-black">
+              <h1 className="text-2xl md:text-4xl font-bold mb-2 font-skModernBold text-black">
                 Learn Prompting
               </h1>
-              <div className="flex items-center mb-2">
-                <h2 className="text-lg text-gray-400 font-skModernRegular mr-2">
+              <div className="flex items-center mb-4">
+                <h2 className="text-lg text-gray-400 font-skModernRegular mr-1">
                   December 2022 -
                 </h2>
                 <div className="flex items-center">
-                  <div className="w-2 h-2 bg-green-600 rounded-full mr-1"></div>
-                  <span className="text-sm font-skModernRegular text-green-600">
+                  <div
+                    className={`w-2 h-2 bg-green-600 rounded-full mr-[0.4rem] mt-1`}
+                  ></div>
+                  <span
+                    className={`text-lg font-skModernRegular text-green-600`}
+                  >
                     Present
                   </span>
                 </div>
               </div>
-              <h3 className="text-sm font-skModernRegular text-black mb-4">
+              {/* <div className="flex items-center mb-2">
+                <h2 className="text-lg text-gray-400 font-skModernRegular mr-2">
+                  December 2022 -
+                </h2>
+                <div className="flex items-center space-x-2">
+                  <div className={`w-2 h-2 bg-green-600 rounded-full`}></div>
+                  <span
+                    className={`text-lg font-skModernRegular text-green-600`}
+                  >
+                    Present
+                  </span>
+                </div>
+              </div> */}
+              <h3 className="text-md font-skModernRegular text-black mb-4">
                 Co-Founder and CEO
               </h3>
             </div>

@@ -32,30 +32,25 @@ interface ImageCardProps {
 }
 
 const ImageCard: React.FC<ImageCardProps> = ({ image, index, className }) => {
-  const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
-
   return (
     <div
-      className={`relative overflow-hidden rounded-lg ${className}`}
-      onMouseEnter={() => setHoveredIndex(index)}
-      onMouseLeave={() => setHoveredIndex(null)}
+      className={`relative overflow-hidden rounded-lg group ${className}`}
     >
       <Image
         src={image[0]}
         alt={image[1]}
         layout="fill"
         objectFit="cover"
-        className="transition-transform duration-300 hover:scale-110"
+        className="transition-transform duration-300 ease-in-out group-hover:scale-110"
       />
-      {hoveredIndex === index && (
-        <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col justify-center items-center text-white p-4">
-          <h3 className="text-xl font-bold mb-2">{image[1]}</h3>
-          <p className="text-sm italic mb-2">{image[2]}</p>
-          <p className="text-sm text-center">{image[3]}</p>
-        </div>
-      )}
+      <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 flex flex-col justify-center items-center text-white p-4 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+        <h3 className="text-xl font-bold mb-2 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 ease-in-out">{image[1]}</h3>
+        <p className="text-sm italic mb-2 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 ease-in-out delay-75">{image[2]}</p>
+        <p className="text-sm text-center transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300 ease-in-out delay-150">{image[3]}</p>
+      </div>
     </div>
   );
+
 };
 
 export default function GardenHome() {
