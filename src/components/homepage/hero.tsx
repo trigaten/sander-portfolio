@@ -4,9 +4,9 @@ import sanderGif from "@/../public/sanderGif.gif";
 
 export default function Hero() {
   return (
-    <div className="col-span-1 md:col-span-2 flex items-center justify-center p-4 mt-12 md:mt-48">
-      <div className="flex flex-col md:flex-row w-full max-w-7xl">
-        <div className="w-full md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0">
+    <div className="col-span-1 md:col-span-2 flex items-center justify-center p-4 mt-12 md:mt-36">
+      <div className="flex flex-col md:flex-row w-full max-w-7xl items-center">
+        <div className="w-full md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0 h-fit">
           <h1 className="text-2xl md:text-4xl font-bold mb-4 font-skModernBold text-black">
             Hi, I'm Sander Schulhoff. I study computer science at the University
             of Maryland and do Natural Language Processing Research at CLIP.
@@ -28,9 +28,12 @@ export default function Hero() {
               className="rounded-lg shadow-md w-full h-auto"
               style={{
                 maxWidth: "100%",
-                height: "auto"
-              }} />
-            <p className=" mt-2 text-black text-lg">ENMLP Best Theme Paper</p>
+                height: "auto",
+              }}
+            />
+            <p className="font-mono mt-4 text-black text-lg">
+              ENMLP Best Theme Paper
+            </p>
           </div>
         </div>
       </div>
