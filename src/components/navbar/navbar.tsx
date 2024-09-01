@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+// import resume from "../../../public/resume/sander_resume.pdf";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -44,7 +45,8 @@ export default function Navbar() {
           </li>
           <li className="text-lg font-skModern">
             <a
-              href="/resume"
+              href="/sander_resume.pdf"
+              download="sander_resume.pdf"
               className="hover:text-green-700 transition-colors duration-300 text-black"
             >
               Resume
