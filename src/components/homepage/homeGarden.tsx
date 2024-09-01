@@ -8,14 +8,15 @@ import image4 from "@/../public/gardenPhotos/home/image4.png";
 import image5 from "@/../public/gardenPhotos/home/image5.png";
 import image6 from "@/../public/gardenPhotos/home/image6.png";
 import image7 from "@/../public/gardenPhotos/home/image7.png";
+
 const gardenImages = [
   [image1, "Banana Plant Lobster Claw", "Latin Name", "Description"],
   [image2, "Blueberry Plant", "Latin Name", "Description"],
   [image3, "Banana Plant Lobster Claw", "Latin Name", "Description"],
   [image4, "Banana Plant Lobster Claw", "Latin Name", "Description"],
   [image5, "Banana Plant Lobster Claw", "Latin Name", "Description"],
-  [image6, "Banana Plant Lobster Claw", "Latin Name", "Description"],
   [image7, "Banana Plant Lobster Claw", "Latin Name", "Description"],
+  [image6, "Banana Plant Lobster Claw", "Latin Name", "Description"],
 ];
 
 interface GardenImage {
@@ -41,7 +42,7 @@ const ImageCard: React.FC<ImageCardProps> = ({ image, index, className }) => {
 
   return (
     <div
-      className={`relative overflow-hidden rounded-lg ${className}`}
+      className={`relative overflow-hidden rounded-lg ${className} group`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
