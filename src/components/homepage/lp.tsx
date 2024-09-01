@@ -14,9 +14,8 @@ export default function LearnPrompting() {
       <div className="container mx-auto px-4 mt-8">
         <div className="flex flex-wrap justify-center gap-6 w-full my-36">
           {images.map((img, index) => (
-            <Link href="https://learnprompting.org/" target="_blank">
+            <Link href="https://learnprompting.org/" target="_blank" key={index}>
               <div
-                key={index}
                 className="relative w-96 h-72 overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer"
               >
                 <Image
