@@ -27,7 +27,7 @@ export default function Hero() {
               height={300}
               className="rounded-lg shadow-md w-full h-auto"
             />
-            <p className=" mt-2 text-black text-lg">ENMLP Best Theme Paper</p>
+            <p className="font-mono mt-4 text-black text-lg">ENMLP Best Theme Paper</p>
           </div>
         </div>
       </div>
