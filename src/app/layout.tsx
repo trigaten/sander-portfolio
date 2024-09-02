@@ -30,7 +30,6 @@ export default function RootLayout({
       <body
         className={`${skModernBold.variable} ${skModernRegular.variable} ${inter.className}`}
       >
-        <Navbar />
         {children}
       </body>
     </html>
