@@ -7,4 +7,5 @@ interface ProjectCardProps {
   link: string;
   description: string;
   image: any;
+  research: boolean;
 }
