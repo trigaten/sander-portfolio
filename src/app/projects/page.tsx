@@ -19,7 +19,7 @@ export default function Projects() {
             layout="fill"
             objectFit="cover"
             objectPosition="center"
-            className="brightness-75"
+            className="brightness-[.65]"
             quality={100}
           />
         </div>
