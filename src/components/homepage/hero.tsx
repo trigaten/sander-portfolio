@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import sanderGif from "@/../public/sanderGif.gif";
 
 export default function Hero() {
@@ -29,8 +29,9 @@ export default function Hero() {
               style={{
                 maxWidth: "100%",
                 height: "auto",
-              }}
-            />
+                maxWidth: "100%",
+                height: "auto"
+              }} />
             <p className="font-mono mt-4 text-black text-lg">
               ENMLP Best Theme Paper
             </p>

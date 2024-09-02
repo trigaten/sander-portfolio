@@ -1,5 +1,5 @@
 import react from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import ProjectsHero from "@/components/projects/hero";
 import projectBg from "@/../public/project.jpg";
 import Navbar from "@/components/navbar/navbar";
@@ -16,12 +16,14 @@ export default function Projects() {
           <Image
             src={projectBg}
             alt="Project background"
-            layout="fill"
-            objectFit="cover"
-            objectPosition="center"
             className="brightness-[.65]"
             quality={100}
-          />
+            fill
+            sizes="100vw"
+            style={{
+              objectFit: "cover",
+              objectPosition: "center"
+            }} />
         </div>
         
         <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent">

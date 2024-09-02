@@ -1,13 +1,12 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import image1 from "@/../public/gardenPhotos/home/image1.png";
 import image2 from "@/../public/gardenPhotos/home/image2.png";
 import image3 from "@/../public/gardenPhotos/home/image3.png";
 import image4 from "@/../public/gardenPhotos/home/image4.png";
 import image5 from "@/../public/gardenPhotos/home/image5.png";
-import image6 from "@/../public/gardenPhotos/home/image6.png";
-import image7 from "@/../public/gardenPhotos/home/image7.png";
+import image8 from "@/../public/gardenPhotos/home/image8.png";
 
 const gardenImages = [
   [image1, "Banana Plant Lobster Claw", "Latin Name", "Description"],
@@ -15,8 +14,7 @@ const gardenImages = [
   [image3, "Banana Plant Lobster Claw", "Latin Name", "Description"],
   [image4, "Banana Plant Lobster Claw", "Latin Name", "Description"],
   [image5, "Banana Plant Lobster Claw", "Latin Name", "Description"],
-  [image7, "Banana Plant Lobster Claw", "Latin Name", "Description"],
-  [image6, "Banana Plant Lobster Claw", "Latin Name", "Description"],
+  [image8, "Banana Plant Lobster Claw", "Latin Name", "Description"],
 ];
 
 interface GardenImage {
@@ -54,6 +52,7 @@ const ImageCard: React.FC<ImageCardProps> = ({ image, index, className }) => {
         sizes="100vw"
         style={{
           objectFit: "cover",
+          maxWidth: "100%",
         }}
       />
       <div className="absolute inset-0 bg-black bg-opacity-0 group-hover:bg-opacity-50 flex flex-col justify-center items-center text-white p-4 opacity-0 group-hover:opacity-100 transition-all duration-300 ease-in-out">
@@ -108,11 +107,6 @@ export default function GardenHome() {
             image={gardenImages[5] as GardenImageData}
             index={5}
             className="col-span-2 md:col-span-2 h-64"
-          />
-          <ImageCard
-            image={gardenImages[6] as GardenImageData}
-            index={6}
-            className="col-span-2 md:col-span-4 h-68"
           />
         </div>
       </div>
