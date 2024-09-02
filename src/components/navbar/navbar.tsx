@@ -15,7 +15,11 @@ export default function Navbar({ variant }: { variant: "light" | "dark" }) {
       <div className="text-lg font-skModernRegular p-4">
         <a
           href="/"
-          className={`ml-12 ${variant == "light" ? "hover:text-emerald-700" : "hover:text-emerald-400"} transition-colors duration-300 ${
+          className={`ml-12 ${
+            variant == "light"
+              ? "hover:text-emerald-700"
+              : "hover:text-emerald-400"
+          } transition-colors duration-300 ${
             variant === "light" ? "text-black" : "text-white"
           }`}
         >
@@ -25,9 +29,9 @@ export default function Navbar({ variant }: { variant: "light" | "dark" }) {
 
       <button className="md:hidden text-lg" onClick={toggleMenu}>
         {isMenuOpen ? (
-          <X size={24} color="black" />
+          <X size={24} color={variant === "light" ? "black" : "white"} />
         ) : (
-          <Menu size={24} color="black" />
+          <Menu size={24} color={variant === "light" ? "black" : "white"} />
         )}
       </button>
 
@@ -40,7 +44,11 @@ export default function Navbar({ variant }: { variant: "light" | "dark" }) {
           <li className="text-lg font-skModernRegular">
             <a
               href="/projects"
-              className={`${variant == "light" ? "hover:text-emerald-700" : "hover:text-emerald-400"} transition-colors duration-300 ${
+              className={`${
+                variant == "light"
+                  ? "hover:text-emerald-700"
+                  : "hover:text-emerald-400"
+              } transition-colors duration-300 ${
                 variant === "light" ? "text-black" : "text-white"
               }`}
             >
@@ -51,7 +59,11 @@ export default function Navbar({ variant }: { variant: "light" | "dark" }) {
             <a
               href="/sander_resume.pdf"
               download="sander_resume.pdf"
-              className={`${variant == "light" ? "hover:text-emerald-700" : "hover:text-emerald-400"} transition-colors duration-300 ${
+              className={`${
+                variant == "light"
+                  ? "hover:text-emerald-700"
+                  : "hover:text-emerald-400"
+              } transition-colors duration-300 ${
                 variant === "light" ? "text-black" : "text-white"
               }`}
             >
@@ -61,7 +73,11 @@ export default function Navbar({ variant }: { variant: "light" | "dark" }) {
           <li className="text-lg font-skModernRegular">
             <a
               href="/blog"
-              className={`${variant == "light" ? "hover:text-emerald-700" : "hover:text-emerald-400"} transition-colors duration-300 ${
+              className={`${
+                variant == "light"
+                  ? "hover:text-emerald-700"
+                  : "hover:text-emerald-400"
+              } transition-colors duration-300 ${
                 variant === "light" ? "text-black" : "text-white"
               } `}
             >
@@ -79,7 +95,11 @@ export default function Navbar({ variant }: { variant: "light" | "dark" }) {
       >
         <a
           href="#bottom"
-          className={`${variant == "light" ? "hover:text-emerald-700" : "hover:text-emerald-400"} transition-colors duration-300 ${
+          className={`${
+            variant == "light"
+              ? "hover:text-emerald-700"
+              : "hover:text-emerald-400"
+          } transition-colors duration-300 ${
             variant === "light" ? "text-black" : "text-white"
           } mr-12`}
           onClick={(e) => {
