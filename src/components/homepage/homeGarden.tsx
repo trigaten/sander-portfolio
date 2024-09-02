@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import image1 from "@/../public/gardenPhotos/home/image1.png";
 import image2 from "@/../public/gardenPhotos/home/image2.png";
 import image3 from "@/../public/gardenPhotos/home/image3.png";

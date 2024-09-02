@@ -1,5 +1,5 @@
 import react from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import ProjectsHero from "@/components/projects/hero";
 import projectBg from "@/../public/project.jpg";
 import Navbar from "@/components/navbar/navbar";
