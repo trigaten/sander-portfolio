@@ -21,32 +21,32 @@ export default function ProjectCard({
   research,
 }: ProjectCardProps) {
   return (
-    <div className="grid grid-cols-2 gap-4 items-center">
+    <div className="grid grid-cols-2 gap-4 items-center justify-center">
       <div className="flex flex-col space-y-2">
-        <h3 className="text-xl font-skModernBold">{title}</h3>
+        <h3 className="text-3xl font-skModernBold text-black">{title}</h3>
         <div className="flex space-x-2">
           {stack.map((tech, index) => (
             <span
               key={index}
-              className="bg-gray-200 rounded-full px-2 py-1 text-sm font-skModernRegular"
+              className="bg-gray-200 rounded-full px-2 py-1 text-sm text-black font-skModernRegular"
             >
               {tech}
             </span>
           ))}
         </div>
         <p className="text-sm text-gray-500 font-skModernRegular">{date}</p>
-        <p className="mt-2 font-skModernRegular">{description}</p>
+        <p className="mt-2 font-skModernRegular text-black">{description}</p>
         {research ? (
           <a
             href={link}
-            className="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded font-skModernRegular"
+            className="mt-4   text-green-600 text-lg rounded font-skModernRegular"
           >
             Paper
           </a>
         ) : (
           <a
             href={link}
-            className="mt-4 inline-block bg-green-500 text-white px-4 py-2 rounded font-skModernRegular"
+            className="mt-4   text-green-600 text-lg rounded font-skModernRegular"
           >
             Link
           </a>
@@ -56,8 +56,8 @@ export default function ProjectCard({
         <Image
           src={image}
           alt={title}
-          width={300}
-          height={200}
+          width={500}
+          height={300}
           className="rounded-lg"
         />
       </div>

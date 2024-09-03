@@ -1,21 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import Image from "next/image";
-import image1 from "@/../public/gardenPhotos/home/image1.png";
-import image2 from "@/../public/gardenPhotos/home/image2.png";
-import image3 from "@/../public/gardenPhotos/home/image3.png";
-import image4 from "@/../public/gardenPhotos/home/image4.png";
-import image5 from "@/../public/gardenPhotos/home/image5.png";
-import image8 from "@/../public/gardenPhotos/home/image8.png";
-
-const gardenImages = [
-  [image1, "Banana Plant Lobster Claw", "Latin Name", "Description"],
-  [image2, "Blueberry Plant", "Latin Name", "Description"],
-  [image3, "Banana Plant Lobster Claw", "Latin Name", "Description"],
-  [image4, "Banana Plant Lobster Claw", "Latin Name", "Description"],
-  [image5, "Banana Plant Lobster Claw", "Latin Name", "Description"],
-  [image8, "Banana Plant Lobster Claw", "Latin Name", "Description"],
-];
+import { gardenImagesHome } from "@/app";
 
 interface GardenImage {
   default: string;
@@ -79,32 +65,32 @@ export default function GardenHome() {
         </h1>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <ImageCard
-            image={gardenImages[0] as GardenImageData}
+            image={gardenImagesHome[0] as GardenImageData}
             index={0}
             className="col-span-2 md:col-span-2 h-96"
           />
           <ImageCard
-            image={gardenImages[1] as GardenImageData}
+            image={gardenImagesHome[1] as GardenImageData}
             index={1}
             className="col-span-1 md:col-span-1 h-96"
           />
           <ImageCard
-            image={gardenImages[2] as GardenImageData}
+            image={gardenImagesHome[2] as GardenImageData}
             index={2}
             className="col-span-1 md:col-span-1 h-96"
           />
           <ImageCard
-            image={gardenImages[3] as GardenImageData}
+            image={gardenImagesHome[3] as GardenImageData}
             index={3}
             className="col-span-1 md:col-span-1 h-64"
           />
           <ImageCard
-            image={gardenImages[4] as GardenImageData}
+            image={gardenImagesHome[4] as GardenImageData}
             index={4}
             className="col-span-1 md:col-span-1 h-64"
           />
           <ImageCard
-            image={gardenImages[5] as GardenImageData}
+            image={gardenImagesHome[5] as GardenImageData}
             index={5}
             className="col-span-2 md:col-span-2 h-64"
           />
