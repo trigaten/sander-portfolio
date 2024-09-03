@@ -12,12 +12,9 @@ export default function Layout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en bg-white">
-      <body
-      >
-        <Navbar variant="light" />
-        {children}
-      </body>
-    </html>
+    <>
+      <Navbar variant="light" />
+      {children}
+    </>
   );
 }

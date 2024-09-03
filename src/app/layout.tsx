@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import localFont from "next/font/local";
 import Navbar from "@/components/navbar/navbar";
+import Footer from "@/components/footer/footer";
 
 const inter = Inter({ subsets: ["latin"] });
 const skModernBold = localFont({
@@ -30,7 +31,10 @@ export default function RootLayout({
       <body
         className={`${skModernBold.variable} ${skModernRegular.variable} ${inter.className}`}
       >
-        {children}
+        <div className="flex flex-col min-h-screen">
+          <main className="flex-grow">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   );
