@@ -11,7 +11,7 @@ export default function Projects() {
         <Navbar variant="dark" />
       </div>
       
-      <header className="relative w-full md:h-[420px] h-80 overflow-hidden">
+      <header className="relative w-full md:h-[380px] h-80 overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src={projectBg}
