@@ -21,7 +21,7 @@ export default function ProjectCard({
   research,
 }: ProjectCardProps) {
   return (
-    <div className="grid grid-cols-2 gap-4 items-center justify-center">
+    <div className="grid grid-cols-2 gap-4 items-center justify-center mb-8">
       <div className="flex flex-col space-y-2">
         <h3 className="text-3xl font-skModernBold text-black">{title}</h3>
         <div className="flex space-x-2">

@@ -8,6 +8,20 @@ import ProjectCard from "@/components/projects/projectCard";
 import projectsResearch from "..";
 
 export default function Projects() {
+  // Group projects by year
+  const projectsByYear = projectsResearch.reduce((acc: any, project: any) => {
+    if (!acc[project.year]) {
+      acc[project.year] = [];
+    }
+    acc[project.year].push(project);
+    return acc;
+  }, {});
+
+  // Sort years in descending order
+  const sortedYears = Object.keys(projectsByYear).sort(
+    (a: any, b: any) => b - a
+  );
+
   return (
     <div className="relative">
       <div className="absolute top-0 left-0 right-0 z-10">
@@ -16,21 +30,25 @@ export default function Projects() {
       <ProjectsHero />
       <div className="py-8 md:px-20 px-6">
         <div>
-          <ProjectSection year="2021" />
-          <div className="">
-            {projectsResearch.map((project, index) => (
-              <ProjectCard
-                key={index}
-                title={project.title}
-                stack={project.stack}
-                date={project.date}
-                link={project.link}
-                description={project.description}
-                image={project.image}
-                research={project.research}
-              />
-            ))}
-          </div>
+          {sortedYears.map((year) => (
+            <React.Fragment key={year}>
+              <ProjectSection year={year} />
+              <div className="grid grid-cols-1  gap-4 mb-8">
+                {projectsByYear[year].map((project: any, index: number) => (
+                  <ProjectCard
+                    key={index}
+                    title={project.title}
+                    stack={project.stack}
+                    date={project.date}
+                    link={project.link}
+                    description={project.description}
+                    image={project.image}
+                    research={project.research}
+                  />
+                ))}
+              </div>
+            </React.Fragment>
+          ))}
         </div>
       </div>
     </div>
