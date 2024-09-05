@@ -6,10 +6,50 @@ import image3 from "@/../public/gardenPhotos/home/image3.png";
 import image4 from "@/../public/gardenPhotos/home/image4.png";
 import image5 from "@/../public/gardenPhotos/home/image5.png";
 import image8 from "@/../public/gardenPhotos/home/image8.png";
+import image6 from "@/../public/gardenPhotos/home/image6.png";
+import image7 from "@/../public/gardenPhotos/home/image7.png";
+import image9 from "@/../public/gardenPhotos/home/image9.png";
 import thePromptReport from "@/../public/projects/2023/thePromptReport.png";
 import mineRL from "@/../public/projects/2023/mineRL.png";
 import shade from "@/../public/projects/2023/Shade.png";
 import andreou from "@/../public/projects/2023/andreou.png";
+
+const homePageProjects = [
+  {
+    title: "HackAPrompt",
+    stack: ["React", "Node"],
+    date: "Spring 2023",
+    link: "https://paper.hackaprompt.com/",
+    description:
+      "Organized the inaugural global Prompt Hacking competition, focusing on jailbreaking and prompt injection. Collected and published the largest dataset of prompt injections (600K+ adversarial prompts) and developed the first taxonomical ontology of Prompt Hacking. Secured $40K in sponsorships from major companies, including OpenAI and HuggingFace. The project won Best Theme Paper at EMNLP2023, with a live presentation delivered to 2,000 researchers.",
+    image: hackAPrompt,
+    research: true,
+    year: 2023,
+  },
+  {
+    title: "The Prompt Report",
+    stack: ["LLMs"],
+    date: "Spring 2023",
+    link: "https://arxiv.org/pdf/2311.16119",
+    description:
+      "The text discusses the vulnerability of Large Language Models (LLMs), commonly deployed in interactive applications like chatbots, to prompt injection and jailbreaking, collectively termed prompt hacking. These attacks manipulate models to disregard their initial instructions and follow potentially harmful inputs. Despite being a recognized security issue, there has been a lack of large-scale studies on this topic. To address this gap, a global prompt hacking competition was launched, generating over 600,000 adversarial prompts targeting three state-of-the-art LLMs. The study presents a dataset that demonstrates the susceptibility of current LLMs to prompt hacking and introduces a taxonomical classification of adversarial prompts.",
+    image: thePromptReport,
+    research: true,
+    year: 2023,
+  },
+  {
+    title:
+      "Stabilizing Hostilities through Arbitration and Diplomatic Engagement",
+    link: "https://www.shade-aie.org/",
+    date: "Spring 2022 - Spring 2023",
+    stack: ["CI Pipelines"],
+    description:
+      "I led a team of graduate and undergraduate students in a DARPA-funded multi-university project aimed at building AI bots to play the board game Diplomacy while interacting with human players. As part of this initiative, I conceptualized and pitched four unique bot designs: Janus Bot, Janus Bot [Shortened], Janus Bot [MVP], and SOA Bot. I developed continuous integration pipelines to streamline development, implementing Dockerized testing and integrating precommit checks. Additionally, I built Vercel integration for the project's documentation website. I also authored a comprehensive report on DAIDE-English translation and developed a DAIDE syntax parser package to support communication protocols between the bots and players.",
+    image: shade,
+    research: true,
+    year: 2023,
+  },
+];
 
 const projectsResearch = [
   {
@@ -100,5 +140,9 @@ const gardenImagesHome = [
     "Technically edible, but very salty",
   ],
   [image8, "False Shamrock", "Oxalis Triangularis", ""],
+  [image7, "Cactus", "", ""],
+  [image6, "Cactus", "", ""],
+  [image9, "Cactus", "", ""],
 ];
 export { gardenImagesHome };
+export { homePageProjects };

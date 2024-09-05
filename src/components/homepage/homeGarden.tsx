@@ -94,6 +94,21 @@ export default function GardenHome() {
             index={5}
             className="col-span-2 md:col-span-2 h-64"
           />
+          <ImageCard
+            image={gardenImagesHome[6] as GardenImageData}
+            index={6}
+            className="col-span-2 md:col-span-2 h-80"
+          />
+          <ImageCard
+            image={gardenImagesHome[7] as GardenImageData}
+            index={7}
+            className="col-span-1 md:col-span-1 h-80"
+          />
+          <ImageCard
+            image={gardenImagesHome[8] as GardenImageData}
+            index={8}
+            className="col-span-1 md:col-span-1 h-80"
+          />
         </div>
       </div>
     </div>
