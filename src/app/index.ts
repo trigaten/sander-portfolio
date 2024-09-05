@@ -119,6 +119,26 @@ const projectsResearch = [
     research: true,
     year: 2021,
   },
+  {
+    title: "Semiotic labs Deep RL Work",
+    stack: ["Python", "Reinforcement Learning", "Julia"],
+    date: "Summer 2022",
+    research: false,
+    link: "https://www.semiotic.ai/",
+    year: 2022,
+    description:
+      "Developed Software for deep reinforcement learning, and implemented continuous policy gradient bandits.",
+  },
+  {
+    title: "Farama Foundation",
+    stack: ["Python", "Jekyll", "Liquid", "HTML", "CSS"],
+    date: "Spring 2022 - Summer 2022",
+    research: false,
+    link: "https://farama.org/",
+    year: 2022,
+    description:
+      "I led the development of the new Gymnasium website, managing PRs and writing scripts to generate pages, menus, and GIFs. I implemented numerous fixes to Gymnasium, and built and refactored the Fantasia Jekyll theme from the PettingZoo website. Additionally, I wrote and published the gym-notices PyPI package and assisted in the development of the PettingZoo website.",
+  },
 ];
 
 export default projectsResearch;
