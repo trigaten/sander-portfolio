@@ -6,6 +6,8 @@ import Navbar from "@/components/navbar/navbar";
 import ProjectSection from "@/components/projects/projectSection";
 import ProjectCard from "@/components/projects/projectCard";
 import projectsResearch from "..";
+import Garden from "@/components/homepage/garden";
+import { gardenImagesProjects } from "..";
 
 export default function Projects() {
   // Group projects by year
@@ -50,6 +52,7 @@ export default function Projects() {
             </React.Fragment>
           ))}
         </div>
+        <Garden images={gardenImagesProjects} />
       </div>
     </div>
   );

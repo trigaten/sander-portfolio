@@ -13,6 +13,18 @@ import thePromptReport from "@/../public/projects/2023/thePromptReport.png";
 import mineRL from "@/../public/projects/2023/mineRL.png";
 import shade from "@/../public/projects/2023/Shade.png";
 import andreou from "@/../public/projects/2023/andreou.png";
+import farama from "@/../public/projects/2023/farama.png";
+import semiotic from "@/../public/projects/2023/semiotic.png";
+//Plant imports for projects
+import creepingCucumber from "@/../public/gardenPhotos/projects/creepingCucumber.png";
+import ghostPipe from "@/../public/gardenPhotos/projects/ghostPipe.png";
+import plant2 from "@/../public/gardenPhotos/projects/plant2.png";
+import plant3 from "@/../public/gardenPhotos/projects/plant3.png";
+import plant4 from "@/../public/gardenPhotos/projects/plant4.png";
+import plant5 from "@/../public/gardenPhotos/projects/plant5.png";
+import plant6 from "@/../public/gardenPhotos/projects/plant6.png";
+import plant7 from "@/../public/gardenPhotos/projects/plant7.png";
+import plant8 from "@/../public/gardenPhotos/projects/plant8.png";
 
 const homePageProjects = [
   {
@@ -128,6 +140,7 @@ const projectsResearch = [
     year: 2022,
     description:
       "Developed Software for deep reinforcement learning, and implemented continuous policy gradient bandits.",
+    image: semiotic,
   },
   {
     title: "Farama Foundation",
@@ -135,6 +148,7 @@ const projectsResearch = [
     date: "Spring 2022 - Summer 2022",
     research: false,
     link: "https://farama.org/",
+    image: farama,
     year: 2022,
     description:
       "I led the development of the new Gymnasium website, managing PRs and writing scripts to generate pages, menus, and GIFs. I implemented numerous fixes to Gymnasium, and built and refactored the Fantasia Jekyll theme from the PettingZoo website. Additionally, I wrote and published the gym-notices PyPI package and assisted in the development of the PettingZoo website.",
@@ -166,3 +180,16 @@ const gardenImagesHome = [
 ];
 export { gardenImagesHome };
 export { homePageProjects };
+
+const gardenImagesProjects = [
+  [creepingCucumber, "Creeping Cucumber", "", ""],
+  [ghostPipe, "Ghost Pipe", "", ""],
+  [plant2, "Plant 2", "", ""],
+  [plant3, "Plant 3", "", ""],
+  [plant4, "Plant 4", "", ""],
+  [plant5, "Plant 5", "", ""],
+  [plant6, "Plant 6", "", ""],
+  [plant7, "Plant 7", "", ""],
+  [plant8, "Plant 8", "", ""],
+];
+export { gardenImagesProjects };
