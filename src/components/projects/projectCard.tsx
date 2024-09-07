@@ -13,6 +13,17 @@ interface ProjectCardProps {
   home?: boolean;
 }
 
+const stackColors = [
+  "bg-blue-700 text-white",
+  "bg-green-700 text-white",
+  "bg-yellow-700 text-white",
+  "bg-red-700 text-white",
+  "bg-purple-700 text-white",
+  "bg-pink-700 text-white",
+  "bg-indigo-700 text-white",
+  "bg-teal-700 text-white",
+];
+
 export default function ProjectCard({
   title,
   stack,
@@ -34,11 +45,13 @@ export default function ProjectCard({
         <p className="text-md text-gray-500 font-skModernRegular pb-1">
           {date}
         </p>
-        <div className="flex space-x-2">
+        <div className="flex flex-wrap gap-2">
           {stack.map((tech, index) => (
             <span
               key={index}
-              className="bg-gray-200 rounded-full px-2 py-1 text-sm text-black font-skModernRegular"
+              className={`${
+                stackColors[index % stackColors.length]
+              } rounded-full px-2 py-1 text-sm font-skModernRegular`}
             >
               {tech}
             </span>
