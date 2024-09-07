@@ -35,11 +35,11 @@ export default function LearnPrompting() {
         <div className="flex items-center justify-center w-full py-4 mt-4 md:mt-24">
           <div className="flex flex-col md:flex-row w-full max-w-7xl">
             <div className="w-full md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0">
-              <h1 className="text-2xl md:text-4xl font-bold mb-2 font-skModernBold text-black">
+              <h1 className="text-3xl font-bold mb-2 font-skModernBold text-black">
                 Learn Prompting
               </h1>
               <div className="flex items-center mb-4">
-                <h2 className="text-lg text-gray-400 font-skModernRegular mr-1">
+                <h2 className="text-md text-gray-500 font-skModernRegular mr-1">
                   December 2022 -
                 </h2>
                 <div className="flex items-center">
@@ -69,6 +69,13 @@ export default function LearnPrompting() {
               <h3 className="text-md font-skModernRegular text-black mb-4">
                 Co-Founder and CEO
               </h3>
+              <Link
+                href="https://learnprompting.org/"
+                className="pt-3 text-green-600 hover:text-emerald-700 transition-colors duration-300 text-lg rounded font-skModernRegular"
+                target="_blank"
+              >
+                Website
+              </Link>
             </div>
             <div className="w-full md:w-1/2">
               <p className="text-lg md:text-xl text-gray-600 font-skModernRegular">
