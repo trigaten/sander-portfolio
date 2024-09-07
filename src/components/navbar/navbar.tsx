@@ -1,6 +1,7 @@
 "use client";
 import React, { useState } from "react";
 import { Menu, X } from "lucide-react";
+import Link from "next/link";
 // import resume from "../../../public/resume/sander_resume.pdf";
 
 export default function Navbar({ variant }: { variant: "light" | "dark" }) {
@@ -93,7 +94,7 @@ export default function Navbar({ variant }: { variant: "light" | "dark" }) {
           isMenuOpen ? "block" : "hidden md:block"
         }`}
       >
-        <a
+        <Link
           href="#bottom"
           className={`${
             variant == "light"
@@ -111,7 +112,7 @@ export default function Navbar({ variant }: { variant: "light" | "dark" }) {
           }}
         >
           The Garden 🪴
-        </a>
+        </Link>
       </div>
     </nav>
   );

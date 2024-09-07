@@ -100,7 +100,7 @@ const projectsResearch = [
   {
     title: "Mine RL",
     stack: ["Reinforcement Learning", "Python"],
-    date: "Summer 2022-Summer 2023",
+    date: "Summer 2022 - Summer 2023",
     link: "https://minerl.io/",
     description:
       "Committed 1000+ lines of documentation, bug fixes, and feature additions, including a tutorial on custom environment building. Also ported (from Project Malmo) the ability to send chat messages in MineRL and wrote a tutorial page for it. This functionality allows significant speed ups for training agents",
@@ -121,7 +121,7 @@ const projectsResearch = [
     year: 2023,
   },
   {
-    title: "andreou lab internship",
+    title: "Andreou Lab Internship",
     stack: ["Python", "PyTorch", "CNN", "GRU"],
     date: "Summer 2021 - Fall 2021",
     link: "https://andreoulab.net/",

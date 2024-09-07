@@ -6,7 +6,7 @@ interface ProjectsProps {
 
 export default function ProjectSection({ year }: ProjectsProps) {
   return (
-    <div className="flex items-center">
+    <div className="flex items-center mb-8">
       <p className="font-skModernBold text-3xl text-gray-700 text-left">
         {year}
       </p>
