@@ -6,28 +6,34 @@ import { homePageProjects } from "@/app";
 
 export default function HomeProjects() {
   return (
-    <div className="container mx-auto px-4 mt-8">
-      <div className="flex items-center justify-center w-full p-4 mt-4 md:mt-24">
+    <div className="container mx-auto mt-8">
+      <div className="flex items-center justify-center w-full py-4 mt-4 md:mt-24">
         <div className="flex flex-col w-full max-w-7xl">
           <div className="w-full pr-0 md:pr-8 mb-8 md:mb-0">
             {homePageProjects.map((project, index) => (
-              <ProjectCard
+              <div
                 key={index}
-                title={project.title}
-                stack={project.stack}
-                date={project.date}
-                link={project.link}
-                description={project.description}
-                image={project.image}
-                research={project.research}
-              />
+                className={
+                  homePageProjects.length - 1 === index ? "mb-0" : "mb-24"
+                }
+              >
+                <ProjectCard
+                  title={project.title}
+                  stack={project.stack}
+                  date={project.date}
+                  link={project.link}
+                  description={project.description}
+                  image={project.image}
+                  research={project.research}
+                />
+              </div>
             ))}
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-8 mb-12">
+      <div className="flex justify-center mb-12">
         <Link href="/projects" passHref>
-          <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full shadow-lg transform transition duration-300 ease-in-out hover:scale-105 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50 font-skModernBold">
+          <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50 font-skModernBold">
             View More Projects
           </button>
         </Link>

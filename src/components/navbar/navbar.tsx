@@ -17,7 +17,7 @@ export default function Navbar({ variant }: { variant: "light" | "dark" }) {
           href="/"
           className={`md:ml-12 ${
             variant == "light"
-              ? "hover:text-emerald-700"
+              ? "hover:text-green-700"
               : "hover:text-emerald-400"
           } transition-colors duration-300 ${
             variant === "light" ? "text-black" : "text-white"
@@ -46,7 +46,7 @@ export default function Navbar({ variant }: { variant: "light" | "dark" }) {
               href="/projects"
               className={`${
                 variant == "light"
-                  ? "hover:text-emerald-700"
+                  ? "hover:text-green-700"
                   : "hover:text-emerald-400"
               } transition-colors duration-300 ${
                 variant === "light" ? "text-black" : "text-white"
@@ -61,7 +61,7 @@ export default function Navbar({ variant }: { variant: "light" | "dark" }) {
               download="sander_resume.pdf"
               className={`${
                 variant == "light"
-                  ? "hover:text-emerald-700"
+                  ? "hover:text-green-700"
                   : "hover:text-emerald-400"
               } transition-colors duration-300 ${
                 variant === "light" ? "text-black" : "text-white"
@@ -75,7 +75,7 @@ export default function Navbar({ variant }: { variant: "light" | "dark" }) {
               href="/blog"
               className={`${
                 variant == "light"
-                  ? "hover:text-emerald-700"
+                  ? "hover:text-green-700"
                   : "hover:text-emerald-400"
               } transition-colors duration-300 ${
                 variant === "light" ? "text-black" : "text-white"
@@ -97,7 +97,7 @@ export default function Navbar({ variant }: { variant: "light" | "dark" }) {
           href="#bottom"
           className={`${
             variant == "light"
-              ? "hover:text-emerald-700"
+              ? "hover:text-green-700"
               : "hover:text-emerald-400"
           } transition-colors duration-300 ${
             variant === "light" ? "text-black" : "text-white"
