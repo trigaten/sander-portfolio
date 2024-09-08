@@ -14,6 +14,16 @@ const tagColors: { [key: string]: string } = {
   // Add more tags and colors as needed
 };
 
+const tagColorsOutline: { [key: string]: string } = {
+  "AI/ML": "border-purple-600 text-purple-600",
+  "Web Development": "border-blue-600 text-blue-600",
+  "Data Science": "border-green-600 text-green-600",
+  Cybersecurity: "border-red-600 text-red-600",
+  "Cloud Computing": "border-orange-600 text-orange-600",
+  Python: "border-yellow-600 text-yellow-600",
+  // Add more tags and colors as needed
+};
+
 interface BlogPostProps {
   title: string;
   image: any;
@@ -95,8 +105,12 @@ export default function BlogsTags() {
                 tag === "All"
                   ? selectedTag === "All"
                     ? "bg-gray-800 text-white"
-                    : "bg-gray-200 text-gray-800"
-                  : tagColors[tag] || "bg-gray-600 text-white"
+                    : "border-gray-800 border text-gray-800"
+                  : selectedTag === tag
+                  ? tagColors[tag] || "bg-gray-600 text-white"
+                  : `${
+                      tagColorsOutline[tag] || "border-gray-600 text-gray-600"
+                    } border`
               } rounded-full px-3 py-1 text-xs md:text-sm font-semibold hover:opacity-80 transition-opacity duration-300`}
             >
               {tag}

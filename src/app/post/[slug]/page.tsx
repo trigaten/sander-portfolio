@@ -77,11 +77,13 @@ export default function BlogPostPage({ params }: { params: { slug: string } }) {
   }
 
   return (
-    <>
-      <Navbar variant="dark" />
+    <div className="relative">
+      <div className="absolute top-0 left-0 right-0 z-10">
+        <Navbar variant="dark" />
+      </div>
       <BlogHero blogPost={blogPost} />
       <BlogContent content={blogPost.content} />
-    </>
+    </div>
   );
 }
 
