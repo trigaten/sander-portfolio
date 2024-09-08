@@ -39,10 +39,12 @@ export default function ProjectCard({
   }
 
   return (
-    <div className="grid grid-cols-2 gap-20 items-top justify-center mb-8">
-      <div className="flex flex-col space-y-2">
-        <h3 className="text-3xl font-skModernBold text-black">{title}</h3>
-        <p className="text-md text-gray-500 font-skModernRegular pb-1">
+    <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-10 lg:gap-20 items-start justify-center mb-8">
+      <div className="flex flex-col space-y-2 order-2 md:order-1">
+        <h3 className="text-2xl md:text-3xl font-skModernBold text-black">
+          {title}
+        </h3>
+        <p className="text-sm md:text-md text-gray-500 font-skModernRegular pb-1">
           {date}
         </p>
         <div className="flex flex-wrap gap-2">
@@ -51,28 +53,30 @@ export default function ProjectCard({
               key={index}
               className={`${
                 stackColors[index % stackColors.length]
-              } rounded-full px-2 py-1 text-sm font-skModernRegular`}
+              } rounded-full px-2 py-1 text-xs md:text-sm font-skModernRegular`}
             >
               {tech}
             </span>
           ))}
         </div>
-        <p className="pt-2 font-skModernRegular text-black">{description}</p>
+        <p className="pt-2 font-skModernRegular text-black text-sm md:text-base">
+          {description}
+        </p>
         <Link
           href={link}
-          className="pt-3 text-green-600 hover:text-emerald-700 transition-colors duration-300 text-lg rounded font-skModernRegular"
+          className="pt-3 text-green-600 hover:text-emerald-700 transition-colors duration-300 text-base md:text-lg rounded font-skModernRegular"
           target="_blank"
         >
           {research ? "Paper" : "Link"}
         </Link>
       </div>
-      <div>
+      <div className="order-1 md:order-2 w-full">
         <Image
           src={image}
           alt={title}
           width={500}
           height={300}
-          className="rounded-lg"
+          className="rounded-lg w-full h-auto"
         />
       </div>
     </div>
