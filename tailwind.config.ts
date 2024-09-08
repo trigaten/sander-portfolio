@@ -16,6 +16,7 @@ const config: Config = {
       fontFamily: {
         skModernBold: ["var(--font-sk-modern-bold)", "sans-serif"],
         skModernRegular: ["var(--font-sk-modern-regular)", "sans-serif"],
+        skModernLight: ["var(--font-sk-modern-light)", "sans-serif"],
       },
       colors: {
         cream: "#FFFDD0", // Add your desired cream color hex code

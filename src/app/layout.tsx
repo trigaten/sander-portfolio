@@ -16,6 +16,11 @@ const skModernRegular = localFont({
   variable: "--font-sk-modern-regular",
 });
 
+const skModernLight = localFont({
+  src: "../../public/fonts/hinted-Sk-Modernist-Light.ttf",
+  variable: "--font-sk-modern-light",
+});
+
 export const metadata: Metadata = {
   title: "Sander Schulhoff",
   description: "San Schulhoff's personal website",
@@ -29,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en bg-white">
       <body
-        className={`${skModernBold.variable} ${skModernRegular.variable} ${inter.className}`}
+        className={`${skModernBold.variable} ${skModernRegular.variable} ${skModernLight.variable} ${inter.className}`}
       >
         <div className="flex flex-col min-h-screen">
           <main className="flex-grow">{children}</main>
