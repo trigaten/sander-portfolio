@@ -6,7 +6,7 @@ import { homePageProjects } from "@/app";
 
 export default function HomeProjects() {
   return (
-    <div className="container mx-auto px-4 mt-8">
+    <div className="container mx-auto px-8 md:px-4 mt-8">
       <div className="flex items-center justify-center w-full py-4 mt-4 md:mt-24">
         <div className="flex flex-col w-full max-w-7xl">
           <div className="w-full pr-0 md:pr-8 mb-8 md:mb-0">

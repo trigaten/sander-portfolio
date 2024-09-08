@@ -12,7 +12,7 @@ export default function Navbar({ variant }: { variant: "light" | "dark" }) {
   };
 
   return (
-    <nav className="flex flex-wrap justify-between items-center px-6 py-2 mt-6 p-4 ">
+    <nav className="flex flex-wrap justify-between items-center px-8 py-2 mt-6 p-4 ">
       <div className="text-lg font-skModernRegular md:p-4">
         <a
           href="/"

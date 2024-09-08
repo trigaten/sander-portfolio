@@ -11,7 +11,7 @@ export default function LearnPrompting() {
 
   return (
     <>
-      <div className="container mx-auto mt-8 px-4">
+      <div className="container mx-auto mt-8 px-8 md:px-4">
         {/* <div className="flex flex-wrap justify-center gap-6 w-full my-36">
           {images.map((img, index) => (
           <Link href="https://learnprompting.org/" target="_blank" key={index}>
