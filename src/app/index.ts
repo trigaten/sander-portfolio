@@ -25,6 +25,7 @@ import plant5 from "@/../public/gardenPhotos/projects/plant5.png";
 import plant6 from "@/../public/gardenPhotos/projects/plant6.png";
 import plant7 from "@/../public/gardenPhotos/projects/plant7.png";
 import plant8 from "@/../public/gardenPhotos/projects/plant8.png";
+import blog1 from "@/../public/blogs/ExampleBlog.png";
 
 const homePageProjects = [
   {
@@ -193,7 +194,6 @@ const gardenImagesProjects = [
   [plant8, "Plant 8", "", ""],
 ];
 export { gardenImagesProjects };
-
 interface BlogPostProps {
   title: string;
   image: any;
@@ -201,6 +201,41 @@ interface BlogPostProps {
   tag: string;
   blurbs: string;
   content: string;
+  id: number;
 }
 
-const blogPosts: BlogPostProps[] = [];
+const blogPosts: BlogPostProps[] = [
+  {
+    id: 0,
+    title: "Python Stack",
+    image: blog1,
+    date: "8th September, 2024",
+    tag: "Python",
+    blurbs: "Research-Grade Coding Practices",
+    content: `
+      <p>Here are my recommendations for how to write/organize code (targeted at Python).</p>
+      <p>
+        Here is me talking about CI and the rest of this for 30 minutes: 
+        <a href="https://example.com/code-practices-talk">Code Practices Talk</a>
+      </p>
+      <p>Here are my recommendations of things to do/use (roughly in order of importance):</p>
+      <ul>
+        <li>CI/CD Pipeline</li>
+        <li>Make your repo a Python Package</li>
+        <li>Use Pytest in CI Pipeline</li>
+        <li>Protect your Main Branch</li>
+        <li>Make people write tests for any new feature they introduce</li>
+        <li>
+          Make people write documentation for all code they write. This can either be in the 
+          <code>README.md</code> or using something like Sphinx, which autobuilds a documentation 
+          website from your docs.
+        </li>
+        <li>Use black and flake8.</li>
+        <li>Conventional Commits</li>
+        <li>Use Test-Driven Development</li>
+      </ul>
+    `,
+  },
+];
+
+export { blogPosts };
