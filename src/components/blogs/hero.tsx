@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import projectBg from "@/../public/blogs/ExampleBlog.png";
 import { blogPosts } from "@/app";
+import Link from "next/link";
 
 export default function BlogsHero() {
   return (
@@ -41,6 +42,12 @@ export default function BlogsHero() {
               {blogPosts[0].date}
             </p>
           </div>
+          <Link
+            href={`/post/${blogPosts[0].id}`}
+            className="text-emerald-400 hover:text-emerald-200 transition-colors duration-300 text-md font-skModernRegular"
+          >
+            Read More
+          </Link>
         </div>
       </div>
     </header>
