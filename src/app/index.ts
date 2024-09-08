@@ -26,6 +26,7 @@ import plant6 from "@/../public/gardenPhotos/projects/plant6.png";
 import plant7 from "@/../public/gardenPhotos/projects/plant7.png";
 import plant8 from "@/../public/gardenPhotos/projects/plant8.png";
 import blog1 from "@/../public/blogs/ExampleBlog.png";
+import blog2 from "@/../public/blogs/image2.png";
 
 //Plant improts for blog
 import blog1Plant from "@/../public/gardenPhotos/blog/BlogPlant1.png";
@@ -255,6 +256,67 @@ const blogPosts: BlogPostProps[] = [
         <li>Conventional Commits</li>
         <li>Use Test-Driven Development</li>
       </ul>
+    `,
+  },
+  {
+    id: 1,
+    title: "Building an Academic Website",
+    image: blog2,
+    date: "8th September, 2024",
+    tag: "Web Development",
+    blurbs:
+      "How to build a responsive modular academic website with Bootstrap and Jekyll",
+    content: `
+    <div>
+  <h1>Why Bootstrap and Jekyll?</h1>
+  <hr>
+  <p>
+    For the purpose of a simple academic website, Bootstrap provides a simple way to responsively structure content with containers, rows, and columns. With only a few divs, you can create appealing layouts for different screen sizes. It provides classes for:
+  </p>
+  <ul>
+    <li>Quickly adjusting margins/padding (e.g. "mt-2" = margin-top: 0.50rem, "py-4" = top and bottom padding: 1.5rem).</li>
+    <li>Making a number of display changes depending on screen size (e.g. "d-md-none" = display:none on medium screen sizes and larger).</li>
+    <li>Responsive navbars and images.</li>
+  </ul>
+  <p>These features make development and site upkeep very quick.</p>
+
+  <h2>Jekyll</h2>
+  <hr>
+  <p>
+    Jekyll lets you to use HTML more efficiently. Among other things it allows you to:
+  </p>
+  <ul>
+    <li>Include HTML files into other HTML files via its include tag.</li>
+    <li>Create reusable templates.</li>
+    <li>Easily work with multiple static blog pages.</li>
+  </ul>
+  <p>
+    Jekyll has a very quick tutorial <a href="https://jekyllrb.com/docs/">here</a>.
+  </p>
+  <p>
+    Bootstrap has a more complicated tutorial. I recommend you get to the layout overview as soon as possible after browsing the Introduction and getting the Bootstrap CDN setup.
+  </p>
+
+  <h2>Icons</h2>
+  <hr>
+  <p>
+    Using icons for your GitHub, LinkedIn, Twitter, etc. links is generally a better look than putting raw text links on your site. Font Awesome and Bootstrap Social icons are good for this. These sites contain many free social media (and other) icons which look good and are easily usable in your site via their CDNs.
+  </p>
+
+  <h2>Jekyll Data</h2>
+  <hr>
+  <p>
+    Another particularly useful feature of Jekyll is how you can easily store and load data from .yaml files. For example, in the image, the content under the Education, Industry Experience, and Languages is all stored in .yaml files and loaded into the webpage with a Jekyll for each loop. The links in the navbar are also all stored in a .yaml file which is loaded similarly.
+  </p>
+
+  <h2>Blogging</h2>
+  <hr>
+  <p>
+    Jekyll provides useful features for managing blog pages. You can write content with HTML or Markdown and use Jekyll to load them onto your site. You can make a "posts" page which lists your posts, provides a description, and an image very easily. The site in the image has title+description, but take a look <a href="https://example.com/blogpage">BLOGPAGE</a> for an example with all three content pieces. You can also generate blog pages from .yaml files.
+  </p>
+</div>
+    
+    
     `,
   },
 ];
