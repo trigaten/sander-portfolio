@@ -213,7 +213,6 @@ const blogPosts: BlogPostProps[] = [
     tag: "Python",
     blurbs: "Research-Grade Coding Practices",
     content: `
-      <h1>My Header!</h1>
       <p>Here are my recommendations for how to write/organize code (targeted at Python).</p>
       <p>
         Here is me talking about CI and the rest of this for 30 minutes: 
