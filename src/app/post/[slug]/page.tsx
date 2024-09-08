@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import Navbar from "@/components/navbar/navbar";
 import { blogPosts } from "@/app";
+import "./blog.css"
 
 const tagColors: { [key: string]: string } = {
   "AI/ML": "bg-purple-600 text-white",
@@ -62,8 +63,8 @@ function BlogHero({ blogPost }: { blogPost: (typeof blogPosts)[0] }) {
 
 function BlogContent({ content }: { content: any }) {
   return (
-    <article className="prose lg:prose-xl mx-auto  py-8 text-lg font-skModernRegular text-black px-12">
-      <div dangerouslySetInnerHTML={{ __html: content }} />
+    <article className="prose lg:prose-xl mx-auto py-8 text-lg font-skModernRegular text-black px-20">
+      <div dangerouslySetInnerHTML={{ __html: content }} className="viewer" />
     </article>
   );
 }
