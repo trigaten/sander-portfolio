@@ -193,3 +193,14 @@ const gardenImagesProjects = [
   [plant8, "Plant 8", "", ""],
 ];
 export { gardenImagesProjects };
+
+interface BlogPostProps {
+  title: string;
+  image: any;
+  date: string;
+  tag: string;
+  blurbs: string;
+  content: string;
+}
+
+const blogPosts: BlogPostProps[] = [];
