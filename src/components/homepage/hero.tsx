@@ -4,7 +4,7 @@ import sanderGif from "@/../public/sanderGif.gif";
 
 export default function Hero() {
   return (
-    <div className="col-span-1 md:col-span-2 flex items-center justify-center p-4 mt-12 md:mt-20">
+    <div className="col-span-1 md:col-span-2 flex items-center justify-center md:p-4 py-4 px-8 mt-12 md:mt-20">
       <div className="flex flex-col md:flex-row w-full max-w-7xl items-center">
         <div className="w-full md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0 h-fit">
           <h1 className="text-2xl md:text-4xl font-bold mb-4 font-skModernBold text-black">

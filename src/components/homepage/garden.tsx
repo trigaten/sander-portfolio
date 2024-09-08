@@ -58,7 +58,7 @@ const ImageCard: React.FC<ImageCardProps> = ({ image, index, className }) => {
 
 export default function Garden({ images }: any) {
   return (
-    <div className="flex items-center justify-center w-full p-4 mt-12 md:mt-24">
+    <div className="flex items-center justify-center w-full md:p-4 py-4 px-8 mt-12 md:mt-24">
       <div className="flex flex-col w-full max-w-7xl">
         <h1 className="text-2xl md:text-4xl font-bold mb-8 font-skModernBold text-black">
           The Garden 🪴
