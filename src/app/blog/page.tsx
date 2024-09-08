@@ -2,6 +2,8 @@ import BlogsHero from "@/components/blogs/hero";
 import Navbar from "@/components/navbar/navbar";
 import Content from "@/components/blogs/content";
 import BlogsTags from "@/components/blogs/blogsTags";
+import { gardenImagesBlog } from "..";
+import Garden from "@/components/homepage/garden";
 function Page() {
   return (
     <div className="relative">
@@ -11,6 +13,7 @@ function Page() {
       <BlogsHero />
       <Content />
       <BlogsTags />
+      <Garden images={gardenImagesBlog} />
     </div>
   );
 }

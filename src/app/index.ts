@@ -193,6 +193,20 @@ const gardenImagesProjects = [
   [plant7, "Plant 7", "", ""],
   [plant8, "Plant 8", "", ""],
 ];
+
+const gardenImagesBlog = [
+  [creepingCucumber, "Creeping Cucumber", "", ""],
+  [ghostPipe, "Ghost Pipe", "", ""],
+  [plant2, "Plant 2", "", ""],
+  [plant3, "Plant 3", "", ""],
+  [plant4, "Plant 4", "", ""],
+  [plant5, "Plant 5", "", ""],
+  [plant6, "Plant 6", "", ""],
+  [plant7, "Plant 7", "", ""],
+  [plant8, "Plant 8", "", ""],
+];
+
+export { gardenImagesBlog };
 export { gardenImagesProjects };
 interface BlogPostProps {
   title: string;
