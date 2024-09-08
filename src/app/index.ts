@@ -27,6 +27,13 @@ import plant7 from "@/../public/gardenPhotos/projects/plant7.png";
 import plant8 from "@/../public/gardenPhotos/projects/plant8.png";
 import blog1 from "@/../public/blogs/ExampleBlog.png";
 
+//Plant improts for blog
+import blog1Plant from "@/../public/gardenPhotos/blog/BlogPlant1.png";
+import blog2Plant from "@/../public/gardenPhotos/blog/BlogPlant2.png";
+import blog3Plant from "@/../public/gardenPhotos/blog/BlogPlant3.png";
+import blog4Plant from "@/../public/gardenPhotos/blog/BlogPlant4.png";
+import blog5Plant from "@/../public/gardenPhotos/blog/BlogPlant5.png";
+
 const homePageProjects = [
   {
     title: "HackAPrompt",
@@ -195,11 +202,11 @@ const gardenImagesProjects = [
 ];
 
 const gardenImagesBlog = [
-  [creepingCucumber, "Creeping Cucumber", "", ""],
-  [ghostPipe, "Ghost Pipe", "", ""],
-  [plant2, "Plant 2", "", ""],
-  [plant3, "Plant 3", "", ""],
-  [plant4, "Plant 4", "", ""],
+  [blog1Plant, "Creeping Cucumber", "", ""],
+  [blog2Plant, "Ghost Pipe", "", ""],
+  [blog3Plant, "Plant 2", "", ""],
+  [blog4Plant, "Plant 3", "", ""],
+  [blog5Plant, "Plant 4", "", ""],
   [plant5, "Plant 5", "", ""],
   [plant6, "Plant 6", "", ""],
   [plant7, "Plant 7", "", ""],
