@@ -3,34 +3,39 @@ import Image1 from "@/../public/LP/image1.png";
 import Image2 from "@/../public/LP/image2.png";
 import Image3 from "@/../public/LP/image3.png";
 import Image4 from "@/../public/LP/image4.png";
+import Image5 from "@/../public/LP/image5.png";
+import Image6 from "@/../public/LP/image6.png";
 import Image from "next/image";
 import Link from "next/link";
 
 export default function LearnPrompting() {
-  const images = [Image1, Image2, Image3];
+  const images = [Image5, Image6];
 
   return (
     <>
       <div className="container mx-auto mt-8 px-8 md:px-4">
-        {/* <div className="flex flex-wrap justify-center gap-6 w-full my-36">
+        <div className="flex flex-wrap justify-center gap-6 w-full my-12">
           {images.map((img, index) => (
-          <Link href="https://learnprompting.org/" target="_blank" key={index}>
-            <div
-              className="relative w-96 h-72 overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer"
+            <Link
+              href="https://learnprompting.org/"
+              target="_blank"
+              key={index}
             >
-              <Image
-                src={img}
-                alt={`image${index + 1}`}
-                className="transition-transform duration-300 hover:scale-110"
-                fill
-                sizes="100vw"
-                style={{
-                  objectFit: "cover"
-                }} />
-            </div>
-          </Link>
-        ))}
-        </div> */}
+              <div className="relative w-96 h-72 overflow-hidden rounded-lg shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+                <Image
+                  src={img}
+                  alt={`image${index + 1}`}
+                  className="transition-transform duration-300 hover:scale-110"
+                  fill
+                  sizes="100vw"
+                  style={{
+                    objectFit: "cover",
+                  }}
+                />
+              </div>
+            </Link>
+          ))}
+        </div>
 
         <div className="flex items-center justify-center w-full py-4 mt-4 md:mt-24">
           <div className="flex flex-col md:flex-row w-full max-w-7xl">
