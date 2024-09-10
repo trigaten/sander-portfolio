@@ -60,9 +60,17 @@ export default function Garden({ images }: any) {
   return (
     <div className="flex items-center justify-center w-full md:p-4 py-4 px-8 mt-12 md:mt-24">
       <div className="flex flex-col w-full max-w-7xl">
-        <h1 className="text-2xl md:text-4xl font-bold mb-8 font-skModernBold text-black">
+        <h1 className="text-2xl md:text-4xl font-bold mb-4 font-skModernBold text-black">
           The Garden 🪴
         </h1>
+        <div className="bg-gradient-to-r from-green-200 to-green-300 p-6 rounded-lg mb-8 shadow-lg">
+          <p className="text-lg md:text-xl text-green-800 font-semibold leading-relaxed">
+            Dive into Sander's plant pictures! 🌿✨ These are living testaments
+            to Sander's passion for plant research and his deep-rooted love for
+            botany. Each leaf, petal, and stem tells a story of curiosity,
+            discovery, and the intricate dance between science and nature.
+          </p>
+        </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
           <ImageCard
             image={images[0] as GardenImageData}
