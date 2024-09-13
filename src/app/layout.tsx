@@ -23,7 +23,7 @@ const skModernLight = localFont({
 
 const baseUrl =
   process.env.NODE_ENV === "production"
-    ? "https://www.sanderschulhoff.com"
+    ? "https://sander-schulhoff.vercel.app"
     : "http://localhost:3000";
 
 export const metadata: Metadata = {
