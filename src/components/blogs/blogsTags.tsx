@@ -39,9 +39,12 @@ interface BlogsCardProps {
 }
 
 export function BlogsCard({ blogPost }: BlogsCardProps) {
+  const onBlockClick = () => {
+    window.location.href = `/post/${blogPost.id}`;
+  };
   return (
-    <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col">
-      <div className="relative">
+    <div className="bg-white rounded-lg shadow-md overflow-hidden flex flex-col transition-transform duration-300 hover:scale-105">
+      <div className="relative hover:cursor-pointer" onClick={onBlockClick}>
         <Image
           src={blogPost.image}
           alt={blogPost.title}
