@@ -6,13 +6,25 @@ import Garden from "@/components/homepage/garden";
 import HomeProjects from "@/components/homepage/homeprojects";
 import { gardenImagesHome } from "..";
 
+const Section = ({ children }: { children: any }) => (
+  <section className="mt-32 first:mt-0">{children}</section>
+);
+
 export default function Home() {
   return (
-    <div>
-      <Hero />
-      <LearnPrompting />
-      <HomeProjects />
-      <Garden images={gardenImagesHome} />
+    <div className="container mx-auto px-4">
+      <Section>
+        <Hero />
+      </Section>
+      <Section>
+        <LearnPrompting />
+      </Section>
+      <Section>
+        <HomeProjects />
+      </Section>
+      <Section>
+        <Garden images={gardenImagesHome} />
+      </Section>
       {/* <Image src="/vercel.svg" alt="Vercel Logo" width={72} height={16} /> */}
     </div>
   );
