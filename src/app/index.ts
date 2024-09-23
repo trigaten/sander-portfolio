@@ -34,6 +34,10 @@ import blog2Plant from "@/../public/gardenPhotos/blog/BlogPlant2.png";
 import blog3Plant from "@/../public/gardenPhotos/blog/BlogPlant3.png";
 import blog4Plant from "@/../public/gardenPhotos/blog/BlogPlant4.png";
 import blog5Plant from "@/../public/gardenPhotos/blog/BlogPlant5.png";
+import blog6Plant from "@/../public/gardenPhotos/blog/BlogPlant6.png";
+import blog7Plant from "@/../public/gardenPhotos/blog/BlogPlant7.png";
+import blog8Plant from "@/../public/gardenPhotos/blog/BlogPlant8.png";
+import blog9Plant from "@/../public/gardenPhotos/blog/BlogPlant9.png";
 
 const homePageProjects = [
   {
@@ -167,15 +171,15 @@ const projectsResearch = [
 export default projectsResearch;
 
 const gardenImagesHome = [
-  [image1, "Heliconia", "", ""],
+  [image1, "Heliconia", "", "Somewhere in Singapore"],
   [
     image2,
     "Lowbush Blueberry",
     "Vaccinium angustifolium",
     "My first wild blueberries, found in Maine",
   ],
-  [image3, "Plants grown in my room", "", ""],
-  [image4, "Red Trillium", "Trillium erectum", "Only flowers for 2-3 weeks."],
+  [image3, "Plants grown in my room", "", "Lettuce, Trifolium Oxalis, Garlic, the works!"],
+  [image4, "Red Trillium", "Trillium erectum", "Only flowers for 2-3 weeks a year."],
   [
     image5,
     "Ice Plant",
@@ -184,34 +188,34 @@ const gardenImagesHome = [
   ],
   [image8, "False Shamrock", "Oxalis Triangularis", ""],
   [image7, "Cactus", "", ""],
-  [image6, "Cactus", "", ""],
-  [image9, "Cactus", "", ""],
+  [image6, "Home-Grown Garlic", "Allium sativum", "You can buy it from the grocery store and just grow it!"],
+  [image9, "Some of my favorite room plants :)", "", ""],
 ];
 export { gardenImagesHome };
 export { homePageProjects };
 
 const gardenImagesProjects = [
-  [creepingCucumber, "Creeping Cucumber", "", ""],
-  [ghostPipe, "Ghost Pipe", "", ""],
-  [plant2, "Plant 2", "", ""],
-  [plant3, "Plant 3", "", ""],
-  [plant4, "Plant 4", "", ""],
-  [plant5, "Plant 5", "", ""],
-  [plant6, "Plant 6", "", ""],
-  [plant7, "Plant 7", "", ""],
-  [plant8, "Plant 8", "", ""],
+  [creepingCucumber, "Creeping Cucumber", "Melothria pendula", "Edible mini cucumbers that grow wild! (eat when green)"],
+  [ghostPipe, "Ghost Pipe", "Monotropa uniflora L.", "This is a non-photosynthesizing plant"],
+  [plant2, "Yucca", "Yucca sp.", "That flower stem does taste like asparagus"],
+  [plant3, "Miscl. plants in a terrarium", "", ""],
+  [plant4, "A stunning leaf layout", "", "Not sure what this plant is called"],
+  [plant5, "Just Nature", "", ""],
+  [plant6, "Pretty Orchids", "Orchidaceae sp.", "The Singapore Botanical gardens are known for their orchids"],
+  [plant7, "This could be 1 of ~750 plants in the genus", "Russula sp.", ""],
+  [plant8, "Common Red Stem-Fig", "Ficus Variegata", "Its fruit grows directly on its trunk!"],
 ];
 
 const gardenImagesBlog = [
-  [blog1Plant, "Creeping Cucumber", "", ""],
-  [blog2Plant, "Ghost Pipe", "", ""],
-  [blog3Plant, "Plant 2", "", ""],
-  [blog4Plant, "Plant 3", "", ""],
-  [blog5Plant, "Plant 4", "", ""],
-  [plant5, "Plant 5", "", ""],
-  [plant6, "Plant 6", "", ""],
-  [plant7, "Plant 7", "", ""],
-  [plant8, "Plant 8", "", ""],
+  [blog1Plant, "Bunchberry", "Cornus canadensis", "Found in Maine"],
+  [blog2Plant, "Ringless Honey mushroom", "Armillaria tabescens", ""],
+  [blog3Plant, "Fake mushrooms, creepier than usual", "", ""],
+  [blog4Plant, "Beauty Berries, Mint, Persimmons, and Peppers", "", "Foraged on UMD campus"],
+  [blog5Plant, "Wineberries", "Rubus phoenicolasius", "100s of thousands grow around UMD"],
+  [blog7Plant, "Plant 5", "", ""],
+  [blog9Plant, "Plant 6", "", ""],
+  [blog8Plant, "Wild Roses", "Rosa Rugosa", "Picture are rose hips, the edible fruit of roses"],
+  [blog6Plant, "Plant 8", "", ""],
 ];
 
 export { gardenImagesBlog };
