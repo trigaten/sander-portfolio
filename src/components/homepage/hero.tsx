@@ -8,14 +8,15 @@ export default function Hero() {
       <div className="flex flex-col md:flex-row w-full max-w-7xl items-center">
         <div className="w-full md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0 h-fit">
           <h1 className="text-2xl md:text-4xl font-bold mb-4 font-skModernBold text-black">
-            Hi, I'm Sander Schulhoff. I study computer science at the University
-            of Maryland and do Natural Language Processing Research at CLIP.
+            Hi, I'm Sander Schulhoff. I am the CEO of LearnPrompting.org, 
+            the first guide on Prompt Engineering.
           </h1>
           <p className="text-lg md:text-xl text-gray-600 font-skModernRegular">
-            I am interested in natural language processing, reinforcement
-            learning, and user interface creation. I plan to graduate with a
-            CMSC major (machine learning specialization) and a minor in STEP
-            (Science, Technology, Ethics, and Policy).
+            I also do research in Deep RL and NLP, most recently publishing 
+            massive scale studies in the fields 
+            of <a href="https://trigaten.github.io/Prompt_Survey_Site/">prompting</a> and <a href="https://paper.hackaprompt.com">prompt security</a>.
+            I have worked variously on the boardgame Diplomacy, Deep RL in Minecraft, event camera video classification, 
+            plant identification, wetland mitigation banking, and prompt engineering/hacking.
           </p>
         </div>
         <div className="w-full md:w-1/2">
@@ -32,7 +33,7 @@ export default function Hero() {
               }}
             />
             <p className="font-mono mt-4 text-black text-lg">
-              ENMLP Best Theme Paper
+              ENMLP2023 Best Theme Paper Presentation
             </p>
           </div>
         </div>

@@ -16,9 +16,9 @@ export default function Home() {
       <Section>
         <Hero />
       </Section>
-      <Section>
+      <section className="mt-16">
         <LearnPrompting />
-      </Section>
+        </section>
       <Section>
         <HomeProjects />
       </Section>
