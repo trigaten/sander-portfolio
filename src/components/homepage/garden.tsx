@@ -71,10 +71,11 @@ export default function Garden({ images }: any) {
         </p> */}
         <div className="bg-gradient-to-r from-emerald-50 to-green-100 p-6 rounded-xl mb-8 shadow-lg border border-green-200">
           <p className="text-lg md:text-xl text-emerald-800 font-skModernRegular leading-relaxed">
-            Dive into Sander's plant pictures! 🌿✨ These are living testaments
+            Here are a few pictures from plants I've foraged, grown, or found. I do impromptu botanical research in my free time 🌿✨ 
+            {/* These are living testaments
             to Sander's passion for plant research and his deep-rooted love for
             botany. Each leaf, petal, and stem tells a story of curiosity,
-            discovery, and the intricate dance between science and nature.
+            discovery, and the intricate dance between science and nature. */}
           </p>
         </div>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
