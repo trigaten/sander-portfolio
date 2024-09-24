@@ -46,7 +46,7 @@ const homePageProjects = [
     date: "Spring 2023",
     link: "https://paper.hackaprompt.com/",
     description:
-      "Organized the inaugural global Prompt Hacking competition, focusing on jailbreaking and prompt injection. Collected and published the largest dataset of prompt injections (600K+ adversarial prompts) and developed the first taxonomical ontology of Prompt Hacking. Secured $40K in sponsorships from major companies, including OpenAI and HuggingFace. The project won Best Theme Paper at EMNLP2023, with a live presentation delivered to 2,000 researchers.",
+      "Organized the first and largest competition on prompt injection. Secured $40K in sponsorship from major companies, including OpenAI, HuggingFace, and Scale. Collected and published the largest dataset of prompt injections (600K+ adversarial prompts) and developed the first taxonomical ontology of Prompt Hacking. The paper won Best Theme Paper at EMNLP2023.",
     image: hackAPrompt,
     research: true,
     year: 2023,
@@ -57,23 +57,23 @@ const homePageProjects = [
     date: "Spring 2023",
     link: "https://arxiv.org/pdf/2311.16119",
     description:
-      "The text discusses the vulnerability of Large Language Models (LLMs), commonly deployed in interactive applications like chatbots, to prompt injection and jailbreaking, collectively termed prompt hacking. These attacks manipulate models to disregard their initial instructions and follow potentially harmful inputs. Despite being a recognized security issue, there has been a lack of large-scale studies on this topic. To address this gap, a global prompt hacking competition was launched, generating over 600,000 adversarial prompts targeting three state-of-the-art LLMs. The study presents a dataset that demonstrates the susceptibility of current LLMs to prompt hacking and introduces a taxonomical classification of adversarial prompts.",
+      "Ran the largest study on prompting ever done. I lead a team of 32 researchers from U Maryland, OpenAI, Microsoft, Princeton, Stanford, and other institutions. Surveyed over 1500 papers and created a systematic literature review with comphrehensive taxonomies of 100s of techniques.",
     image: thePromptReport,
     research: true,
     year: 2023,
   },
-  {
-    title:
-      "Stabilizing Hostilities through Arbitration and Diplomatic Engagement",
-    link: "https://www.shade-aie.org/",
-    date: "Spring 2022 - Spring 2023",
-    stack: ["CI Pipelines"],
-    description:
-      "I led a team of graduate and undergraduate students in a DARPA-funded multi-university project aimed at building AI bots to play the board game Diplomacy while interacting with human players. As part of this initiative, I conceptualized and pitched four unique bot designs: Janus Bot, Janus Bot [Shortened], Janus Bot [MVP], and SOA Bot. I developed continuous integration pipelines to streamline development, implementing Dockerized testing and integrating precommit checks. Additionally, I built Vercel integration for the project's documentation website. I also authored a comprehensive report on DAIDE-English translation and developed a DAIDE syntax parser package to support communication protocols between the bots and players.",
-    image: shade,
-    research: true,
-    year: 2023,
-  },
+  // {
+  //   title:
+  //     "Stabilizing Hostilities through Arbitration and Diplomatic Engagement",
+  //   link: "https://www.shade-aie.org/",
+  //   date: "Spring 2022 - Spring 2023",
+  //   stack: ["CI Pipelines"],
+  //   description:
+  //     "I led a team of graduate and undergraduate students in a DARPA-funded multi-university project aimed at building AI bots to play the board game Diplomacy while interacting with human players. As part of this initiative, I conceptualized and pitched four unique bot designs: Janus Bot, Janus Bot [Shortened], Janus Bot [MVP], and SOA Bot. I developed continuous integration pipelines to streamline development, implementing Dockerized testing and integrating precommit checks. Additionally, I built Vercel integration for the project's documentation website. I also authored a comprehensive report on DAIDE-English translation and developed a DAIDE syntax parser package to support communication protocols between the bots and players.",
+  //   image: shade,
+  //   research: true,
+  //   year: 2023,
+  // },
 ];
 
 const projectsResearch = [
@@ -85,7 +85,7 @@ const projectsResearch = [
     description:
       "Developed a comprehensive map of hundreds of wild plants on the University of Maryland campus, engaging numerous campus stakeholders and securing a UMD sustainability grant. Additionally, constructed a biogas reactor using plastic components to further support campus sustainability efforts.",
     image: botanyResearch,
-    research: true,
+    research: false,
     year: 2024,
   },
   {
@@ -94,7 +94,7 @@ const projectsResearch = [
     date: "Spring 2023",
     link: "https://paper.hackaprompt.com/",
     description:
-      "Organized the inaugural global Prompt Hacking competition, focusing on jailbreaking and prompt injection. Collected and published the largest dataset of prompt injections (600K+ adversarial prompts) and developed the first taxonomical ontology of Prompt Hacking. Secured $40K in sponsorships from major companies, including OpenAI and HuggingFace. The project won Best Theme Paper at EMNLP2023, with a live presentation delivered to 2,000 researchers.",
+      "Organized the first and largest competition on prompt injection. Secured $40K in sponsorship from major companies, including OpenAI, HuggingFace, and Scale. Collected and published the largest dataset of prompt injections (600K+ adversarial prompts) and developed the first taxonomical ontology of Prompt Hacking. The paper won Best Theme Paper at EMNLP2023.",
     image: hackAPrompt,
     research: true,
     year: 2023,
@@ -103,9 +103,9 @@ const projectsResearch = [
     title: "The Prompt Report",
     stack: ["LLMs"],
     date: "Spring 2023",
-    link: "https://arxiv.org/pdf/2311.16119",
+    link: "https://trigaten.github.io/Prompt_Survey_Site/",
     description:
-      "The text discusses the vulnerability of Large Language Models (LLMs), commonly deployed in interactive applications like chatbots, to prompt injection and jailbreaking, collectively termed prompt hacking. These attacks manipulate models to disregard their initial instructions and follow potentially harmful inputs. Despite being a recognized security issue, there has been a lack of large-scale studies on this topic. To address this gap, a global prompt hacking competition was launched, generating over 600,000 adversarial prompts targeting three state-of-the-art LLMs. The study presents a dataset that demonstrates the susceptibility of current LLMs to prompt hacking and introduces a taxonomical classification of adversarial prompts.",
+      "Ran the largest study on prompting ever done. I lead a team of 32 researchers from U Maryland, OpenAI, Microsoft, Princeton, Stanford, and other institutions. Surveyed over 1500 papers and created a systematic literature review with comphrehensive taxonomies of 100s of techniques.",
     image: thePromptReport,
     research: true,
     year: 2023,
@@ -114,9 +114,9 @@ const projectsResearch = [
     title: "Mine RL",
     stack: ["Reinforcement Learning", "Python"],
     date: "Summer 2022 - Summer 2023",
-    link: "https://minerl.io/",
+    link: "https://neurips.cc/virtual/2023/poster/73655#:~:text=BEDD%20consists%20of%20a%20collection,of%20human%20and%20algorithmic%20agents",
     description:
-      "Committed 1000+ lines of documentation, bug fixes, and feature additions, including a tutorial on custom environment building. Also ported (from Project Malmo) the ability to send chat messages in MineRL and wrote a tutorial page for it. This functionality allows significant speed ups for training agents",
+      "Helped organize the Minecraft Deep Reinforcement Learning comeptition. Also ported in various functionalities from Malmo and wrote 1000+ lines of code.",
     image: mineRL,
     research: true,
     year: 2023,
@@ -130,42 +130,42 @@ const projectsResearch = [
     description:
       "I led a team of graduate and undergraduate students in a DARPA-funded multi-university project aimed at building AI bots to play the board game Diplomacy while interacting with human players. As part of this initiative, I conceptualized and pitched four unique bot designs: Janus Bot, Janus Bot [Shortened], Janus Bot [MVP], and SOA Bot. I developed continuous integration pipelines to streamline development, implementing Dockerized testing and integrating precommit checks. Additionally, I built Vercel integration for the project's documentation website. I also authored a comprehensive report on DAIDE-English translation and developed a DAIDE syntax parser package to support communication protocols between the bots and players.",
     image: shade,
-    research: true,
+    research: false,
     year: 2023,
   },
-  {
-    title: "Andreou Lab Internship",
-    stack: ["Python", "PyTorch", "CNN", "GRU"],
-    date: "Summer 2021 - Fall 2021",
-    link: "https://andreoulab.net/",
-    image: andreou,
-    description:
-      "During my internship at the Andreou Lab at Johns Hopkins University under Professor Andreas G. Andreou, I developed data pipelines to capture and transmit data from Arduino chips and RealSense cameras to Microsoft's Psi framework. My role also involved implementing a Convolutional Neural Network (CNN) combined with a Gated Recurrent Unit (GRU) model from scratch using PyTorch for video classification tasks, specifically working with event camera data. This hands-on experience allowed me to contribute to cutting-edge research at the intersection of hardware integration and machine learning.",
-    research: true,
-    year: 2021,
-  },
-  {
-    title: "Semiotic labs Deep RL Work",
-    stack: ["Python", "Reinforcement Learning", "Julia"],
-    date: "Summer 2022",
-    research: false,
-    link: "https://www.semiotic.ai/",
-    year: 2022,
-    description:
-      "Developed Software for deep reinforcement learning, and implemented continuous policy gradient bandits.",
-    image: semiotic,
-  },
-  {
-    title: "Farama Foundation",
-    stack: ["Python", "Jekyll", "Liquid", "HTML", "CSS"],
-    date: "Spring 2022 - Summer 2022",
-    research: false,
-    link: "https://farama.org/",
-    image: farama,
-    year: 2022,
-    description:
-      "I led the development of the new Gymnasium website, managing PRs and writing scripts to generate pages, menus, and GIFs. I implemented numerous fixes to Gymnasium, and built and refactored the Fantasia Jekyll theme from the PettingZoo website. Additionally, I wrote and published the gym-notices PyPI package and assisted in the development of the PettingZoo website.",
-  },
+  // {
+  //   title: "Andreou Lab Internship",
+  //   stack: ["Python", "PyTorch", "CNN", "GRU"],
+  //   date: "Summer 2021 - Fall 2021",
+  //   link: "https://andreoulab.net/",
+  //   image: andreou,
+  //   description:
+  //     "During my internship at the Andreou Lab at Johns Hopkins University under Professor Andreas G. Andreou, I developed data pipelines to capture and transmit data from Arduino chips and RealSense cameras to Microsoft's Psi framework. My role also involved implementing a Convolutional Neural Network (CNN) combined with a Gated Recurrent Unit (GRU) model from scratch using PyTorch for video classification tasks, specifically working with event camera data. This hands-on experience allowed me to contribute to cutting-edge research at the intersection of hardware integration and machine learning.",
+  //   research: true,
+  //   year: 2021,
+  // },
+  // {
+  //   title: "Semiotic labs Deep RL Work",
+  //   stack: ["Python", "Reinforcement Learning", "Julia"],
+  //   date: "Summer 2022",
+  //   research: false,
+  //   link: "https://www.semiotic.ai/",
+  //   year: 2022,
+  //   description:
+  //     "Developed Software for deep reinforcement learning, and implemented continuous policy gradient bandits.",
+  //   image: semiotic,
+  // },
+  // {
+  //   title: "Farama Foundation",
+  //   stack: ["Python", "Jekyll", "Liquid", "HTML", "CSS"],
+  //   date: "Spring 2022 - Summer 2022",
+  //   research: false,
+  //   link: "https://farama.org/",
+  //   image: farama,
+  //   year: 2022,
+  //   description:
+  //     "I led the development of the new Gymnasium website, managing PRs and writing scripts to generate pages, menus, and GIFs. I implemented numerous fixes to Gymnasium, and built and refactored the Fantasia Jekyll theme from the PettingZoo website. Additionally, I wrote and published the gym-notices PyPI package and assisted in the development of the PettingZoo website.",
+  // },
 ];
 
 export default projectsResearch;
@@ -212,10 +212,10 @@ const gardenImagesBlog = [
   [blog3Plant, "Fake mushrooms, creepier than usual", "", ""],
   [blog4Plant, "Beauty Berries, Mint, Persimmons, and Peppers", "", "Foraged on UMD campus"],
   [blog5Plant, "Wineberries", "Rubus phoenicolasius", "100s of thousands grow around UMD"],
-  [blog7Plant, "Plant 5", "", ""],
-  [blog9Plant, "Plant 6", "", ""],
-  [blog8Plant, "Wild Roses", "Rosa Rugosa", "Picture are rose hips, the edible fruit of roses"],
-  [blog6Plant, "Plant 8", "", ""],
+  [blog7Plant, "Crocus", "Crocus sp.", "Some of the first flowers that come out in spring"],
+  [blog9Plant, "Singapore Botanical Gardens", "", ""],
+  [blog8Plant, "Leatherleaf Mahonia", "Berberis bealei", "U Maryland"],
+  [blog6Plant, "Wild Roses", "Rosa Rugosa", "Picture are rose hips, the edible fruit of roses"],
 ];
 
 export { gardenImagesBlog };
