@@ -37,21 +37,21 @@ function BlogHero({ blogPost }: { blogPost: (typeof blogPosts)[0] }) {
             <span
               className={`${
                 tagColors[blogPost.tag] || "bg-gray-600"
-              } rounded-full px-3 py-1 text-xs sm:text-sm text-white font-skModernRegular`}
+              } rounded-full px-3 py-1 text-xs sm:text-sm text-white font-latoRegular`}
             >
               {blogPost.tag}
             </span>
           </div>
           <div className="w-full md:w-[55%]">
-            <h1 className="text-2xl sm:text-3xl md:text-4xl font-skModernBold text-white leading-tight">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl font-latoBold text-white leading-tight">
               {blogPost.title}
             </h1>
           </div>
           <div className="flex flex-col sm:flex-row justify-between gap-y-2 sm:gap-y-0">
-            <p className="text-sm sm:text-base md:text-xl font-skModernRegular text-white w-full md:w-[55%] text-left">
+            <p className="text-sm sm:text-base md:text-xl font-latoRegular text-white w-full md:w-[55%] text-left">
               {blogPost.blurbs}
             </p>
-            <p className="text-sm sm:text-base md:text-xl font-skModernLight text-white w-full md:w-[55%] text-left sm:text-right">
+            <p className="text-sm sm:text-base md:text-xl font-latoLight text-white w-full md:w-[55%] text-left sm:text-right">
               {blogPost.date}
             </p>
           </div>
@@ -63,7 +63,7 @@ function BlogHero({ blogPost }: { blogPost: (typeof blogPosts)[0] }) {
 
 function BlogContent({ content }: { content: any }) {
   return (
-    <article className="prose lg:prose-xl mx-auto py-8 text-lg font-skModernRegular text-black px-20">
+    <article className="prose lg:prose-xl mx-auto py-8 text-lg font-latoRegular text-black px-20">
       <div dangerouslySetInnerHTML={{ __html: content }} className="viewer" />
     </article>
   );

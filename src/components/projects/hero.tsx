@@ -21,7 +21,7 @@ export default function ProjectsHero() {
       </div>
 
       <div className="absolute inset-0 flex items-end bg-gradient-to-t from-black/60 to-transparent">
-        <h1 className="text-4xl font-skModernRegular text-white py-8 md:px-20 px-6">
+        <h1 className="text-4xl font-latoRegular text-white py-8 md:px-20 px-6">
           Projects & Research
         </h1>
       </div>

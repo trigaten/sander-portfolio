@@ -35,33 +35,33 @@ export default function LearnPrompting() {
       </div>
       <div className="flex flex-col md:flex-row w-full max-w-7xl mx-auto">
         <div className="w-full md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0">
-          <h1 className="text-3xl font-bold mb-2 font-skModernBold text-black">
+          <h1 className="text-3xl font-bold mb-2 font-latoBold text-black">
             Learn Prompting
           </h1>
           <div className="flex items-center mb-4">
-            <h2 className="text-md text-gray-500 font-skModernRegular mr-1">
+            <h2 className="text-md text-gray-500 font-latoRegular mr-1">
               December 2022 -
             </h2>
             <div className="flex items-center">
               <div className="w-2 h-2 bg-green-600 rounded-full mr-[0.4rem] mt-1"></div>
-              <span className="text-lg font-skModernRegular text-green-600">
+              <span className="text-lg font-latoRegular text-green-600">
                 Present
               </span>
             </div>
           </div>
-          <h3 className="text-md font-skModernRegular text-black mb-4">
+          <h3 className="text-md font-latoRegular text-black mb-4">
             Co-Founder and CEO
           </h3>
           <Link
             href="https://learnprompting.org/"
-            className="inline-block pt-3 text-green-600 hover:text-emerald-700 transition-colors duration-300 text-lg rounded font-skModernRegular"
+            className="inline-block pt-3 text-green-600 hover:text-emerald-700 transition-colors duration-300 text-lg rounded font-latoRegular"
             target="_blank"
           >
             Website
           </Link>
         </div>
         <div className="w-full md:w-1/2">
-          <p className="text-lg md:text-xl text-gray-600 font-skModernRegular">
+          <p className="text-lg md:text-xl text-gray-600 font-latoRegular">
             Learn Prompting is a comprehensive guide to understanding and
             mastering the art of prompt engineering. It covers various
             techniques and strategies to effectively communicate with AI models,
@@ -106,33 +106,33 @@ export default function LearnPrompting() {
 //       </div>
 //       <div className="flex flex-col md:flex-row w-full max-w-7xl mx-auto">
 //         <div className="w-full md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0">
-//           <h1 className="text-3xl font-bold mb-2 font-skModernBold text-black">
+//           <h1 className="text-3xl font-bold mb-2 font-latoBold text-black">
 //             Learn Prompting
 //           </h1>
 //           <div className="flex items-center mb-4">
-//             <h2 className="text-md text-gray-500 font-skModernRegular mr-1">
+//             <h2 className="text-md text-gray-500 font-latoRegular mr-1">
 //               December 2022 -
 //             </h2>
 //             <div className="flex items-center">
 //               <div className="w-2 h-2 bg-green-600 rounded-full mr-[0.4rem] mt-1"></div>
-//               <span className="text-lg font-skModernRegular text-green-600">
+//               <span className="text-lg font-latoRegular text-green-600">
 //                 Present
 //               </span>
 //             </div>
 //           </div>
-//           <h3 className="text-md font-skModernRegular text-black mb-4">
+//           <h3 className="text-md font-latoRegular text-black mb-4">
 //             Co-Founder and CEO
 //           </h3>
 //           <Link
 //             href="https://learnprompting.org/"
-//             className="inline-block pt-3 text-green-600 hover:text-emerald-700 transition-colors duration-300 text-lg rounded font-skModernRegular"
+//             className="inline-block pt-3 text-green-600 hover:text-emerald-700 transition-colors duration-300 text-lg rounded font-latoRegular"
 //             target="_blank"
 //           >
 //             Website
 //           </Link>
 //         </div>
 //         <div className="w-full md:w-1/2">
-//           <p className="text-lg md:text-xl text-gray-600 font-skModernRegular">
+//           <p className="text-lg md:text-xl text-gray-600 font-latoRegular">
 //             Learn Prompting is a comprehensive guide to understanding and
 //             mastering the art of prompt engineering. It covers various
 //             techniques and strategies to effectively communicate with AI models,

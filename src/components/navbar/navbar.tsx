@@ -13,7 +13,7 @@ export default function Navbar({ variant }: { variant: "light" | "dark" }) {
   return (
     <nav className="col-span-1 md:col-span-2 flex items-center justify-center md:p-4 py-4 px-8 mt-6">
       <div className="flex flex-wrap justify-between items-center w-full max-w-7xl">
-        <div className="text-lg font-skModernRegular">
+        <div className="text-lg font-latoRegular">
           <a
             href="/"
             className={`${
@@ -49,7 +49,7 @@ export default function Navbar({ variant }: { variant: "light" | "dark" }) {
             <ul className="flex flex-col space-y-4 mt-16">
               {["Projects & Research", "Resume", "Blog", "The Garden 🪴"].map(
                 (item, index) => (
-                  <li key={index} className="text-lg font-skModernRegular">
+                  <li key={index} className="text-lg font-latoRegular">
                     <a
                       href={
                         item === "Resume"
@@ -90,7 +90,7 @@ export default function Navbar({ variant }: { variant: "light" | "dark" }) {
           <ul className="flex flex-row space-x-8">
             {["Projects & Research", "Resume", "Blog", "The Garden 🪴"].map(
               (item, index) => (
-                <li key={index} className="text-lg font-skModernRegular">
+                <li key={index} className="text-lg font-latoRegular">
                   <a
                     href={
                       item === "Resume"

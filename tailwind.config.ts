@@ -14,9 +14,12 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       fontFamily: {
-        skModernBold: ["var(--font-sk-modern-bold)", "sans-serif"],
-        skModernRegular: ["var(--font-sk-modern-regular)", "sans-serif"],
-        skModernLight: ["var(--font-sk-modern-light)", "sans-serif"],
+        // skModernBold: ["var(--font-sk-modern-bold)", "sans-serif"],
+        // skModernRegular: ["var(--font-sk-modern-regular)", "sans-serif"],
+        // latoLight: ["var(--font-sk-modern-light)", "sans-serif"],
+        latoBold: ["var(--font-lato-bold)", "sans-serif"],
+        latoRegular: ["var(--font-lato-regular)", "sans-serif"],
+        latoLight: ["var(--font-lato-light)", "sans-serif"],
       },
       colors: {
         cream: "#FFFDD0", // Add your desired cream color hex code

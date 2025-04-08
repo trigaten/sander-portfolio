@@ -7,16 +7,20 @@ export default function Hero() {
     <div className="col-span-1 md:col-span-2 flex items-center justify-center md:p-4 py-4 px-8 mt-12 md:mt-20">
       <div className="flex flex-col md:flex-row w-full max-w-7xl items-center">
         <div className="w-full md:w-1/2 pr-0 md:pr-8 mb-8 md:mb-0 h-fit">
-          <h1 className="text-2xl md:text-4xl font-bold mb-4 font-skModernBold text-black">
-            Hi, I'm Sander Schulhoff. I am the CEO of LearnPrompting.org, 
-            the first guide on Prompt Engineering.
+          <h1 className="text-2xl md:text-4xl font-bold mb-4 font-latoBold text-black">
+            Hi, I'm Sander Schulhoff. I am the CEO of LearnPrompting.org, the
+            first guide on Prompt Engineering.
           </h1>
-          <p className="text-lg md:text-xl text-gray-600 font-skModernRegular">
-            I also do research in Deep RL and NLP, most recently publishing 
-            massive scale studies in the fields 
-            of <a href="https://trigaten.github.io/Prompt_Survey_Site/">prompting</a> and <a href="https://paper.hackaprompt.com">prompt security</a>.
-            I have worked variously on the boardgame Diplomacy, Deep RL in Minecraft, Event Camera Video Classification, 
-            Plant Identification, Wetland Mitigation Banking, and Prompt Engineering/Hacking.
+          <p className="text-lg md:text-xl text-gray-600 font-latoRegular">
+            I also do research in Deep RL and NLP, most recently publishing
+            massive scale studies in the fields of{" "}
+            <a href="https://trigaten.github.io/Prompt_Survey_Site/">
+              prompting
+            </a>{" "}
+            and <a href="https://paper.hackaprompt.com">prompt security</a>. I
+            have worked variously on the boardgame Diplomacy, Deep RL in
+            Minecraft, Event Camera Video Classification, Plant Identification,
+            Wetland Mitigation Banking, and Prompt Engineering/Hacking.
           </p>
         </div>
         <div className="w-full md:w-1/2">

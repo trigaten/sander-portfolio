@@ -73,10 +73,10 @@ export default function ProjectCard({
   return (
     <div className="flex flex-col md:grid md:grid-cols-2 gap-6 md:gap-10 lg:gap-20 items-start justify-center mb-8">
       <div className="flex flex-col space-y-2 order-2 md:order-1">
-        <h3 className="text-2xl md:text-3xl font-skModernBold text-black">
+        <h3 className="text-2xl md:text-3xl font-latoBold text-black">
           {title}
         </h3>
-        <p className="text-sm md:text-md text-gray-500 font-skModernRegular pb-1">
+        <p className="text-sm md:text-md text-gray-500 font-latoRegular pb-1">
           {date}
         </p>
         <div className="flex flex-wrap gap-2">
@@ -85,19 +85,19 @@ export default function ProjectCard({
               key={index}
               className={`${
                 techColors[tech] || defaultColor
-              } rounded-full px-2 py-1 text-xs md:text-sm font-skModernRegular`}
+              } rounded-full px-2 py-1 text-xs md:text-sm font-latoRegular`}
             >
               {tech}
             </span>
           ))}
         </div>
         <div
-          className="pt-2 font-skModernRegular text-black text-sm md:text-base"
+          className="pt-2 font-latoRegular text-black text-sm md:text-base"
           dangerouslySetInnerHTML={{ __html: description }}
         />
         <Link
           href={link}
-          className="pt-3 text-green-600 hover:text-emerald-700 transition-colors duration-300 text-base md:text-lg rounded font-skModernRegular"
+          className="pt-3 text-green-600 hover:text-emerald-700 transition-colors duration-300 text-base md:text-lg rounded font-latoRegular"
           target="_blank"
         >
           {research ? "Paper" : "Link"}

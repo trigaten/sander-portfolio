@@ -61,18 +61,18 @@ export function BlogsCard({ blogPost }: BlogsCardProps) {
         </span>
       </div>
       <div className="p-4 flex-grow flex flex-col">
-        <p className="text-sm text-gray-500 mb-2 font-skModernRegular">
+        <p className="text-sm text-gray-500 mb-2 font-latoRegular">
           {blogPost.date}
         </p>
-        <h3 className="text-xl text-black font-skModernBold mb-2 flex-grow">
+        <h3 className="text-xl text-black font-latoBold mb-2 flex-grow">
           {blogPost.title}
         </h3>
-        <p className="text-gray-600 text-sm mb-4 font-skModernRegular">
+        <p className="text-gray-600 text-sm mb-4 font-latoRegular">
           {blogPost.blurbs}
         </p>
         <Link
           href={`/post/${blogPost.id}`}
-          className="text-green-600 hover:text-emerald-700 transition-colors duration-300 text-sm font-skModernRegular"
+          className="text-green-600 hover:text-emerald-700 transition-colors duration-300 text-sm font-latoRegular"
         >
           Read More
         </Link>

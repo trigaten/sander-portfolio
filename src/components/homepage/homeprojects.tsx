@@ -33,7 +33,7 @@ export default function HomeProjects() {
       </div>
       <div className="flex justify-center mb-12">
         <Link href="/projects-research" passHref>
-          <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50 font-skModernBold">
+          <button className="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-6 rounded-full transition-all focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-50 font-latoBold">
             View More Projects
           </button>
         </Link>

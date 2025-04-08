@@ -60,18 +60,19 @@ export default function Garden({ images }: any) {
   return (
     <div className="flex items-center justify-center w-full md:p-4 py-4 px-8 ">
       <div className="flex flex-col w-full max-w-7xl">
-        <h1 className="text-2xl md:text-4xl font-bold mb-6 font-skModernBold text-black">
+        <h1 className="text-2xl md:text-4xl font-bold mb-6 font-latoBold text-black">
           The Garden 🪴
         </h1>
-        {/* <p className="text-md md:text-xl text-black mb-6 font-skModernRegular leading-relaxed">
+        {/* <p className="text-md md:text-xl text-black mb-6 font-latoRegular leading-relaxed">
           Dive into Sander's plant pictures! 🌿✨ These are living testaments to
           Sander's passion for plant research and his deep-rooted love for
           botany. Each leaf, petal, and stem tells a story of curiosity,
           discovery, and the intricate dance between science and nature.
         </p> */}
         <div className="bg-gradient-to-r from-emerald-50 to-green-100 p-6 rounded-xl mb-8 shadow-lg border border-green-200">
-          <p className="text-lg md:text-xl text-emerald-800 font-skModernRegular leading-relaxed">
-            Here are a few pictures from plants I've foraged, grown, or found. I do impromptu botanical research in my free time 🌿✨ 
+          <p className="text-lg md:text-xl text-emerald-800 font-latoRegular leading-relaxed">
+            Here are a few pictures from plants I've foraged, grown, or found. I
+            do impromptu botanical research in my free time 🌿✨
             {/* These are living testaments
             to Sander's passion for plant research and his deep-rooted love for
             botany. Each leaf, petal, and stem tells a story of curiosity,

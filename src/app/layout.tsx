@@ -6,19 +6,34 @@ import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/footer";
 
 const inter = Inter({ subsets: ["latin"] });
-const skModernBold = localFont({
-  src: "../../public/fonts/hinted-Sk-Modernist-Bold.ttf",
-  variable: "--font-sk-modern-bold",
+// const latoBold = localFont({
+//   src: "../../public/fonts/hinted-Sk-Modernist-Bold.ttf",
+//   variable: "--font-sk-modern-bold",
+// });
+
+// const latoRegular = localFont({
+//   src: "../../public/fonts/hinted-Sk-Modernist-Regular.ttf",
+//   variable: "--font-sk-modern-regular",
+// });
+
+// const latoLight = localFont({
+//   src: "../../public/fonts/hinted-Sk-Modernist-Light.ttf",
+//   variable: "--font-sk-modern-light",
+// });
+
+const latoBold = localFont({
+  src: "../../public/fonts/Lato-Bold.ttf",
+  variable: "--font-lato-bold",
 });
 
-const skModernRegular = localFont({
-  src: "../../public/fonts/hinted-Sk-Modernist-Regular.ttf",
-  variable: "--font-sk-modern-regular",
+const latoRegular = localFont({
+  src: "../../public/fonts/Lato-Regular.ttf",
+  variable: "--font-lato-regular",
 });
 
-const skModernLight = localFont({
-  src: "../../public/fonts/hinted-Sk-Modernist-Light.ttf",
-  variable: "--font-sk-modern-light",
+const latoLight = localFont({
+  src: "../../public/fonts/Lato-Light.ttf",
+  variable: "--font-lato-light",
 });
 
 const baseUrl =
@@ -87,7 +102,7 @@ export default function RootLayout({
   return (
     <html lang="en bg-white">
       <body
-        className={`${skModernBold.variable} ${skModernRegular.variable} ${skModernLight.variable} ${inter.className}`}
+        className={`${latoBold.variable} ${latoRegular.variable} ${latoLight.variable} ${inter.className}`}
       >
         <div className="flex flex-col min-h-screen">
           <main className="flex-grow">{children}</main>
