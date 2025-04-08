@@ -6,20 +6,6 @@ import Navbar from "@/components/navbar/navbar";
 import Footer from "@/components/footer/footer";
 
 const inter = Inter({ subsets: ["latin"] });
-// const latoBold = localFont({
-//   src: "../../public/fonts/hinted-Sk-Modernist-Bold.ttf",
-//   variable: "--font-sk-modern-bold",
-// });
-
-// const latoRegular = localFont({
-//   src: "../../public/fonts/hinted-Sk-Modernist-Regular.ttf",
-//   variable: "--font-sk-modern-regular",
-// });
-
-// const latoLight = localFont({
-//   src: "../../public/fonts/hinted-Sk-Modernist-Light.ttf",
-//   variable: "--font-sk-modern-light",
-// });
 
 const latoBold = localFont({
   src: "../../public/fonts/Lato-Bold.ttf",
