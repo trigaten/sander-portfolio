@@ -19,6 +19,9 @@ Wild Onion
 Pomegranate 
 Paw paw
 Black locust
+ramps
+purple coneflower
+
 Fig
 Turkey tail
 Chicken of the woods
@@ -26,8 +29,9 @@ Skunk cabbage
 Miners lettuce 
 Golden rod
 Pride of Madeira 
+basil
+thai basil
 Broad leaved plantain
-Narrow leaved plantain 
 Purple come flower
 Sunflower
 Black eyed susan
@@ -35,6 +39,7 @@ Carolina horsenettle
 Rose
 Lenten rose
 Dandelion
+english ivy
 Daisy
 Fennel
 Bleeding heart
@@ -43,6 +48,7 @@ Prickly pear
 Jade plant 
 Nurstirtium
 Ice plant
+pachysandra
 Black maidenhair fern
 Bird of paradise
 Date palms
@@ -50,10 +56,14 @@ Boneset
 Iris
 Pokeweed
 Greenbrier 
-Pigeon grpe 
+crabgrass
+hairy crabgrass
+Pigeon grape 
 Persimmon
 Rosemary
 Lavender 
+jewel weed
+wandering jew
 ZZ plant
 Snake plant
 Pathos
@@ -114,3 +124,38 @@ mullein
 lambs ear
 Three leaved mercury
 Wood sorrel
+Sweet gum 
+leatherleaf mahonia
+Staghorn sumac
+Black walnut
+Mulberry
+Tree of heaven
+Ginkgo
+Prickly pear?
+Virginia creeper
+Hairy white oldfield aster
+Jasmine
+Mile a minute weed
+Wintergreen
+Azalea
+Lotus
+Elephants ear
+Hyacinth
+porcelain berry
+fire weed
+Lantana
+Sweet potato
+Blood root
+Buttercup
+Jimsonweed
+May apple
+Ladslipper orchid
+Tiger lilly 
+Sage
+Lemon balm
+Baobab tree
+Agave
+pod mustard
+wild radish
+chickweed
+cardamine occulta
